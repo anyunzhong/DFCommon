@@ -318,6 +318,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11240A021ADABE7C00B19949 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		11A16B161AA2313700782B4C = {
 			isa = PBXGroup;
 			children = (
@@ -373,6 +380,7 @@
 		11A16C871AA2354F00782B4C /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				11240A021ADABE7C00B19949 /* Utils */,
 				11A16C881AA2354F00782B4C /* AFNetworking */,
 				11A16C9C1AA2354F00782B4C /* EGOTableViewPullRefresh */,
 				11A16CA81AA2354F00782B4C /* MBProgressHUD */,

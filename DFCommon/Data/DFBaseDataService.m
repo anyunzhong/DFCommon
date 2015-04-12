@@ -71,8 +71,13 @@
 
 -(NSString *) getRequestUrl
 {
-    NSString *url = [NSString stringWithFormat:@"%@%@",API_DOMAIN,[self getRequestPath]];
+    NSString *url = [NSString stringWithFormat:@"%@%@",[self getRequestDomain],[self getRequestPath]];
     return  url;
+}
+
+-(NSString *) getRequestDomain
+{
+    return @"";
 }
 
 -(NSString *) getRequestPath
