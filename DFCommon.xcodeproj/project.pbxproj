@@ -51,6 +51,13 @@
 		110FA3251AF3FF7D00771420 /* DFTableViewNativeRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 110FA2FB1AF3FF7D00771420 /* DFTableViewNativeRefreshControl.m */; };
 		110FA3261AF3FF7D00771420 /* DFTableViewODRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 110FA2FD1AF3FF7D00771420 /* DFTableViewODRefreshControl.m */; };
 		110FA3271AF3FF7D00771420 /* DFTableViewRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 110FA2FF1AF3FF7D00771420 /* DFTableViewRefreshControl.m */; };
+		11E738831AF71097008F9DFA /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E738791AF71097008F9DFA /* FMDatabase.m */; };
+		11E738841AF71097008F9DFA /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E7387B1AF71097008F9DFA /* FMDatabaseAdditions.m */; };
+		11E738851AF71097008F9DFA /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E7387D1AF71097008F9DFA /* FMDatabasePool.m */; };
+		11E738861AF71097008F9DFA /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E7387F1AF71097008F9DFA /* FMDatabaseQueue.m */; };
+		11E738871AF71097008F9DFA /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E738821AF71097008F9DFA /* FMResultSet.m */; };
+		11E7388D1AF710A7008F9DFA /* DFBaseStorageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E7388A1AF710A7008F9DFA /* DFBaseStorageService.m */; };
+		11E7388E1AF710A7008F9DFA /* DFDatabaseHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E7388C1AF710A7008F9DFA /* DFDatabaseHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -141,6 +148,21 @@
 		110FA2FD1AF3FF7D00771420 /* DFTableViewODRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFTableViewODRefreshControl.m; sourceTree = "<group>"; };
 		110FA2FE1AF3FF7D00771420 /* DFTableViewRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFTableViewRefreshControl.h; sourceTree = "<group>"; };
 		110FA2FF1AF3FF7D00771420 /* DFTableViewRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFTableViewRefreshControl.m; sourceTree = "<group>"; };
+		11E738781AF71097008F9DFA /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		11E738791AF71097008F9DFA /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		11E7387A1AF71097008F9DFA /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		11E7387B1AF71097008F9DFA /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		11E7387C1AF71097008F9DFA /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		11E7387D1AF71097008F9DFA /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		11E7387E1AF71097008F9DFA /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		11E7387F1AF71097008F9DFA /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		11E738801AF71097008F9DFA /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		11E738811AF71097008F9DFA /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		11E738821AF71097008F9DFA /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		11E738891AF710A7008F9DFA /* DFBaseStorageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFBaseStorageService.h; sourceTree = "<group>"; };
+		11E7388A1AF710A7008F9DFA /* DFBaseStorageService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFBaseStorageService.m; sourceTree = "<group>"; };
+		11E7388B1AF710A7008F9DFA /* DFDatabaseHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFDatabaseHelper.h; sourceTree = "<group>"; };
+		11E7388C1AF710A7008F9DFA /* DFDatabaseHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFDatabaseHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +218,7 @@
 		110FA2A31AF3FF7D00771420 /* DFCommon */ = {
 			isa = PBXGroup;
 			children = (
+				11E738881AF710A7008F9DFA /* Storage */,
 				110FA2A41AF3FF7D00771420 /* Controller */,
 				110FA2A91AF3FF7D00771420 /* Data */,
 				110FA2AE1AF3FF7D00771420 /* Lib */,
@@ -230,6 +253,7 @@
 		110FA2AE1AF3FF7D00771420 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				11E738771AF71097008F9DFA /* FMDB */,
 				110FA2AF1AF3FF7D00771420 /* AFNetworking */,
 				110FA2C31AF3FF7D00771420 /* EGOTableViewPullRefresh */,
 				110FA2CF1AF3FF7D00771420 /* MBProgressHUD */,
@@ -383,6 +407,35 @@
 			path = RefreshControl;
 			sourceTree = "<group>";
 		};
+		11E738771AF71097008F9DFA /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				11E738781AF71097008F9DFA /* FMDatabase.h */,
+				11E738791AF71097008F9DFA /* FMDatabase.m */,
+				11E7387A1AF71097008F9DFA /* FMDatabaseAdditions.h */,
+				11E7387B1AF71097008F9DFA /* FMDatabaseAdditions.m */,
+				11E7387C1AF71097008F9DFA /* FMDatabasePool.h */,
+				11E7387D1AF71097008F9DFA /* FMDatabasePool.m */,
+				11E7387E1AF71097008F9DFA /* FMDatabaseQueue.h */,
+				11E7387F1AF71097008F9DFA /* FMDatabaseQueue.m */,
+				11E738801AF71097008F9DFA /* FMDB.h */,
+				11E738811AF71097008F9DFA /* FMResultSet.h */,
+				11E738821AF71097008F9DFA /* FMResultSet.m */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		11E738881AF710A7008F9DFA /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				11E738891AF710A7008F9DFA /* DFBaseStorageService.h */,
+				11E7388A1AF710A7008F9DFA /* DFBaseStorageService.m */,
+				11E7388B1AF710A7008F9DFA /* DFDatabaseHelper.h */,
+				11E7388C1AF710A7008F9DFA /* DFDatabaseHelper.m */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -458,12 +511,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				110FA3251AF3FF7D00771420 /* DFTableViewNativeRefreshControl.m in Sources */,
+				11E738831AF71097008F9DFA /* FMDatabase.m in Sources */,
 				110FA3231AF3FF7D00771420 /* DFTableViewEGORefreshControl.m in Sources */,
 				110FA3091AF3FF7D00771420 /* AFURLConnectionOperation.m in Sources */,
 				110FA3021AF3FF7D00771420 /* DFBaseDataService.m in Sources */,
 				110FA3031AF3FF7D00771420 /* DFBaseResponse.m in Sources */,
 				110FA3171AF3FF7D00771420 /* MJRefreshBaseView.m in Sources */,
 				110FA31B1AF3FF7D00771420 /* UIScrollView+MJExtension.m in Sources */,
+				11E738841AF71097008F9DFA /* FMDatabaseAdditions.m in Sources */,
 				110FA3211AF3FF7D00771420 /* DFReachabilityUtil.m in Sources */,
 				110FA2861AF3FEF900771420 /* ViewController.m in Sources */,
 				110FA30B1AF3FF7D00771420 /* AFURLResponseSerialization.m in Sources */,
@@ -479,12 +534,14 @@
 				110FA30A1AF3FF7D00771420 /* AFURLRequestSerialization.m in Sources */,
 				110FA30D1AF3FF7D00771420 /* EGORefreshTableHeaderView.m in Sources */,
 				110FA3081AF3FF7D00771420 /* AFSecurityPolicy.m in Sources */,
+				11E7388E1AF710A7008F9DFA /* DFDatabaseHelper.m in Sources */,
 				110FA3041AF3FF7D00771420 /* AFHTTPRequestOperation.m in Sources */,
 				110FA30C1AF3FF7D00771420 /* AFURLSessionManager.m in Sources */,
 				110FA2831AF3FEF900771420 /* AppDelegate.m in Sources */,
 				110FA3001AF3FF7D00771420 /* DFBaseTableViewController.m in Sources */,
 				110FA31A1AF3FF7D00771420 /* MJRefreshHeaderView.m in Sources */,
 				110FA3121AF3FF7D00771420 /* LoadMoreTableFooterView.m in Sources */,
+				11E738871AF71097008F9DFA /* FMResultSet.m in Sources */,
 				110FA3271AF3FF7D00771420 /* DFTableViewRefreshControl.m in Sources */,
 				110FA31D1AF3FF7D00771420 /* UIView+MJExtension.m in Sources */,
 				110FA3201AF3FF7D00771420 /* PullToRefreshView.m in Sources */,
@@ -492,6 +549,9 @@
 				110FA3061AF3FF7D00771420 /* AFHTTPSessionManager.m in Sources */,
 				110FA31E1AF3FF7D00771420 /* ODRefreshControl.m in Sources */,
 				110FA2801AF3FEF900771420 /* main.m in Sources */,
+				11E738861AF71097008F9DFA /* FMDatabaseQueue.m in Sources */,
+				11E738851AF71097008F9DFA /* FMDatabasePool.m in Sources */,
+				11E7388D1AF710A7008F9DFA /* DFBaseStorageService.m in Sources */,
 				110FA3071AF3FF7D00771420 /* AFNetworkReachabilityManager.m in Sources */,
 				110FA3051AF3FF7D00771420 /* AFHTTPRequestOperationManager.m in Sources */,
 			);
@@ -625,6 +685,7 @@
 				110FA29F1AF3FEF900771420 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
