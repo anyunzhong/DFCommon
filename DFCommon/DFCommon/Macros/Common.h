@@ -12,6 +12,9 @@
 #import "DFDevice.h"
 #import "DFNetwork.h"
 
+#import "DFBaseViewController.h"
+#import "DFBaseTableViewController.h"
+
 
 #define BaseViewColor [UIColor whiteColor]
 #define HudDefaultHideTime 1
