@@ -7,7 +7,6 @@
 //
 
 #import "DFBaseViewController.h"
-#import "Common.h"
 
 @implementation DFBaseViewController
 
@@ -33,6 +32,15 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = BaseViewColor;
+    
+    if ([self leftBarButtonItem] != nil) {
+        self.navigationItem.leftBarButtonItem = [self leftBarButtonItem];
+    }
+    
+    
+    if ([self rightBarButtonItem] != nil) {
+        self.navigationItem.rightBarButtonItem = [self rightBarButtonItem];
+    }
     
     
 }
@@ -120,5 +128,15 @@
     
 }
 
+
+
+-(UIBarButtonItem *) rightBarButtonItem
+{
+    return nil;
+}
+-(UIBarButtonItem *) leftBarButtonItem
+{
+    return nil;
+}
 
 @end

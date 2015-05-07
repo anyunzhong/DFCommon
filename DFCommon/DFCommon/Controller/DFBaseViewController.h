@@ -20,5 +20,6 @@
 -(void) hudShowText:(NSString *)text;
 -(void) hudShowText:(NSString *)text second:(NSInteger)second;
 
-
+-(UIBarButtonItem *) rightBarButtonItem;
+-(UIBarButtonItem *) leftBarButtonItem;
 @end

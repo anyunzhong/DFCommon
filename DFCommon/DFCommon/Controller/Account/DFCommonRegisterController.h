@@ -11,4 +11,8 @@
 @interface DFCommonRegisterController : DFBaseTableViewController
 
 -(UIColor *) mainColor;
+
+-(void) onSendVerifyCode;
+
+
 @end

@@ -33,6 +33,7 @@
 
 #import "UIButton+Corner.h"
 #import "UILabel+Corner.h"
+#import "UIBarButtonItem+Lite.h"
 
 
 #endif
