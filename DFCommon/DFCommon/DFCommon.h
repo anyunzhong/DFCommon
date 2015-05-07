@@ -11,12 +11,18 @@
 
 #import "DFDevice.h"
 #import "DFNetwork.h"
+#import "DFView.h"
 
 #import "DFBaseViewController.h"
 #import "DFBaseTableViewController.h"
+#import "DFBaseTabBarController.h"
 
 
-#define BaseViewColor [UIColor whiteColor]
-#define HudDefaultHideTime 1
+#import "DFBaseDataService.h"
+
+#import "NSDictionary+JSON.h"
+#import "NSMutableDictionary+JSON.h"
+
+
 
 #endif

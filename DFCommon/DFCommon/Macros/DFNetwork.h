@@ -9,15 +9,6 @@
 #ifndef Heacha_DFNetwork_h
 #define Heacha_DFNetwork_h
 
-#define __DFCommonDebug__
-
-#ifdef __DFCommonDebug__
-#define API_DOMAIN @"http://112.124.28.196:8080"
-#else
-#define API_DOMAIN @"http://api.heacha.com"
-#endif
-
-
 #define NetworkTimeoutInterval 30
 
 #define CustomErrorDomain @"net.datafans"
