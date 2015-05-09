@@ -116,7 +116,7 @@
 -(void)onStatusError:(DFBaseResponse *)response
 {
     if (response.errorCode == 0 || response.errorMsg == nil) {
-        [self hudShowText:@"数据格式错误"];
+        [self hudShowText:@"未知错误, 请联系客服"];
     }else{
         [self hudShowText:[NSString stringWithFormat:@"%ld:%@",(long)response.errorCode,response.errorMsg]];
     }
