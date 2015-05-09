@@ -32,12 +32,12 @@
                 self.status = [statusResult integerValue];
             }
             
-            id errorCodeResult = [dic objectForKey:@"error_code"];
+            id errorCodeResult = [dic objectForKey:@"errorCode"];
             if (errorCodeResult&& [errorCodeResult isKindOfClass:[NSNumber class]]) {
                 self.errorCode = [errorCodeResult integerValue];
             }
             
-            id errorMsgResult = [dic objectForKey:@"error_msg"];
+            id errorMsgResult = [dic objectForKey:@"errorMsg"];
             if (errorMsgResult&& [errorMsgResult isKindOfClass:[NSString class]]) {
                 self.errorMsg = errorMsgResult;
             }

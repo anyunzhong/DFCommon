@@ -118,7 +118,8 @@
     if (response.errorCode == 0 || response.errorMsg == nil) {
         [self hudShowText:@"未知错误, 请联系客服"];
     }else{
-        [self hudShowText:[NSString stringWithFormat:@"%ld:%@",(long)response.errorCode,response.errorMsg]];
+        NSLog(@"CODER-ERROR: %@",[NSString stringWithFormat:@"%ld:%@",(long)response.errorCode,response.errorMsg]);
+        [self hudShowText:[NSString stringWithFormat:@"%@",response.errorMsg]];
     }
 }
 
