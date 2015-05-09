@@ -13,9 +13,10 @@
 +(UIBarButtonItem *) text:(NSString *)text selector:(SEL)selecor target:(id)target
 {
     
-    CGFloat width = text.length *18;
+    CGFloat width = text.length *15;
     UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, width, 30)];
     [button setTitle:text forState:UIControlStateNormal];
+    button.titleLabel.font = [UIFont systemFontOfSize:15];
     [button addTarget:target action:selecor forControlEvents:UIControlEventTouchUpInside];
     return [[UIBarButtonItem alloc] initWithCustomView:button];
     

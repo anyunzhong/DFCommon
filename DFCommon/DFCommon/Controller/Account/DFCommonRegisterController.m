@@ -43,12 +43,22 @@
 {
     [super viewDidLoad];
     [self initView];
+    
+    
 }
 
 -(void) initView
 {
     UITapGestureRecognizer *rec = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onTapView:)];
     [self.view addGestureRecognizer:rec];
+    
+    
+}
+
+
+-(UIBarButtonItem *)rightBarButtonItem
+{
+    return [UIBarButtonItem text:@"下一步" selector:@selector(onNextStep:) target:self];
 }
 
 #pragma mark - UITabelViewDataSource
@@ -61,7 +71,7 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 60;
+    return 65;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -131,7 +141,10 @@
             break;
     }
     
-    
+    _phoneNumTextField.text = @"18680551729";
+    _verifyCodeTextField.text = @"123456";
+    _passwordTextField.text = @"123456";
+
     return cell;
     
 }
@@ -151,12 +164,13 @@
 {
     UIImageView *iconImageView = [[UIImageView alloc] initWithFrame:CGRectMake(16, 15, 32, 32)];
     iconImageView.image = [UIImage imageNamed:icon];
+    iconImageView.hidden = YES;
     return iconImageView;
 }
 
 -(UITextField *) getTextField
 {
-    UITextField  *textField = [[UITextField alloc] initWithFrame:CGRectMake(55, 0, self.view.frame.size.width, 60)];
+    UITextField  *textField = [[UITextField alloc] initWithFrame:CGRectMake(23, 0, self.view.frame.size.width, 65)];
     textField.keyboardType = UIKeyboardTypeNumberPad;
     _phoneNumTextField.borderStyle = UITextBorderStyleNone;
     return textField;
@@ -218,6 +232,55 @@
 -(void) onSendVerifyCode
 {
     
+}
+
+
+-(void)onNextStep
+{
+    
+}
+
+
+
+-(NSString *) getPhoneNum
+{
+    return _phoneNumTextField.text;
+}
+-(NSString *) getCode
+{
+    return _verifyCodeTextField.text;
+}
+-(NSString *) getPassword
+{
+    return _passwordTextField.text;
+}
+
+
+
+
+-(void) onNextStep:(id) sender
+{
+    
+    if ([[self getPhoneNum] isEqualToString:@""]) {
+        [self hudShowText:@"请填写手机号"];
+        return;
+    }
+    
+    if ([[self getPassword] isEqualToString:@""]) {
+        [self hudShowText:@"请填写密码"];
+        return;
+    }
+    
+    
+    if ([[self getPassword] isEqualToString:@""]) {
+        [self hudShowText:@"请填写密码"];
+        return;
+    }
+    
+    
+    [self.timer invalidate];
+    
+    [self onNextStep];
 }
 
 

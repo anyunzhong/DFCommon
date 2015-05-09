@@ -14,5 +14,11 @@
 
 -(void) onSendVerifyCode;
 
+-(void) onNextStep;
+
+
+-(NSString *) getPhoneNum;
+-(NSString *) getCode;
+-(NSString *) getPassword;
 
 @end

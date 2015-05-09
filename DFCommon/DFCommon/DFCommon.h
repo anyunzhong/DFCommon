@@ -26,6 +26,11 @@
 #import "DFBaseDataService.h"
 
 
+//storage
+#import "DFBaseStorageService.h"
+#import "DFUserDefaultStorageService.h"
+
+
 //category
 #import "NSDictionary+JSON.h"
 #import "NSMutableDictionary+JSON.h"
@@ -35,5 +40,9 @@
 #import "UILabel+Corner.h"
 #import "UIBarButtonItem+Lite.h"
 
+
+//lib
+#import "LXActionSheet.h"
+#import "RRDevice.h"
 
 #endif
