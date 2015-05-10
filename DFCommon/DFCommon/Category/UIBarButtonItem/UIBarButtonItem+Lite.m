@@ -29,4 +29,18 @@
     return [[UIBarButtonItem alloc] initWithCustomView:button];
 }
 
+
++(UIBarButtonItem *) back:(NSString *)title selector:(SEL)selecor target:(id)target
+{
+    CGFloat width = title.length *15 + 20;
+    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, width, 30)];
+    [button setTitle:title forState:UIControlStateNormal];
+    button.titleLabel.font = [UIFont systemFontOfSize:15];
+    [button addTarget:target action:selecor forControlEvents:UIControlEventTouchUpInside];
+    [button setImage:[UIImage imageNamed:@"back-arrow"] forState:UIControlStateNormal];
+    [button setTitleEdgeInsets:UIEdgeInsetsMake(0, -5, 0, 0)];
+    [button setImageEdgeInsets:UIEdgeInsetsMake(1, -15, 0, 0)];
+    return [[UIBarButtonItem alloc] initWithCustomView:button];
+}
+
 @end

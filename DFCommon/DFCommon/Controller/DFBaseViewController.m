@@ -33,6 +33,7 @@
     
     self.view.backgroundColor = BaseViewColor;
     
+    
     if ([self leftBarButtonItem] != nil) {
         self.navigationItem.leftBarButtonItem = [self leftBarButtonItem];
     }
@@ -41,6 +42,7 @@
     if ([self rightBarButtonItem] != nil) {
         self.navigationItem.rightBarButtonItem = [self rightBarButtonItem];
     }
+    
     
     
 }
@@ -108,7 +110,7 @@
     if (error.code == -1001) {
         [self hudShowText:@"网络超时"];
     }
-
+    
     
     NSLog(@"%@",error);
 }
@@ -137,7 +139,28 @@
 }
 -(UIBarButtonItem *) leftBarButtonItem
 {
-    return nil;
+    
+    NSArray *controllers = self.navigationController.viewControllers;
+    NSString *title = nil;
+    for (UIViewController *controller in controllers) {
+        if (controller == self) {
+            break;
+        }
+        title = controller.title;
+    }
+    if (title == nil) {
+        if (controllers.count > 1) {
+            title = @"返回";
+        }else{
+            return  nil;
+        }
+    }
+    return [UIBarButtonItem back:title selector:@selector(onBack:) target:self];
+}
+
+-(void) onBack:(id) sender
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

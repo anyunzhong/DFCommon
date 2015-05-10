@@ -141,9 +141,9 @@
             break;
     }
     
-    _phoneNumTextField.text = @"18680551729";
-    _verifyCodeTextField.text = @"123456";
-    _passwordTextField.text = @"123456";
+//    _phoneNumTextField.text = @"18680551729";
+//    _verifyCodeTextField.text = @"123456";
+//    _passwordTextField.text = @"123456";
 
     return cell;
     

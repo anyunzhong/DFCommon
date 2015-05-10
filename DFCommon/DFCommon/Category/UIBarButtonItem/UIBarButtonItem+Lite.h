@@ -12,6 +12,7 @@
 
 +(UIBarButtonItem *) text:(NSString *)text selector:(SEL)selecor target:(id)target;
 +(UIBarButtonItem *) icon:(NSString *)icon selector:(SEL)selecor target:(id)target;
++(UIBarButtonItem *) back:(NSString *)title selector:(SEL)selecor target:(id)target;
 
 
 @end
