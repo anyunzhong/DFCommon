@@ -18,6 +18,7 @@
 #import "DFBaseViewController.h"
 #import "DFBaseTableViewController.h"
 #import "DFBaseTabBarController.h"
+#import "DFSectionIndexTabelViewController.h"
 
 #import "DFCommonRegisterController.h"
 
