@@ -38,12 +38,14 @@
         return;
     }
     
-    NSLog(@"path: %@  params: %@", [self getRequestUrl], [self getRequestParameters]);
+    [self setRequestParams:_params];
+    
+    NSLog(@"path: %@  params: %@", [self getRequestUrl], _params);
     
     switch (_requestType) {
         case DFRequestTypeGet:
         {
-            [_manager GET:[self getRequestUrl] parameters:[self getRequestParameters] success:^(AFHTTPRequestOperation *operation, id responseObject) {
+            [_manager GET:[self getRequestUrl] parameters:_params success:^(AFHTTPRequestOperation *operation, id responseObject) {
                 [self onSuccess:responseObject];
             } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
                 [self onError:error];
@@ -84,11 +86,6 @@
     return @"";
 }
 
--(NSMutableDictionary *) getRequestParameters
-{
-    [self setRequestParams:_params];
-    return _params;
-}
 
 -(void) setRequestParams:(NSMutableDictionary *)params
 {

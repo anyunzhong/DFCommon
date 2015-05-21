@@ -45,7 +45,8 @@ typedef enum:NSUInteger
 
 -(NSString *) getRequestUrl;
 -(NSString *) getRequestPath;
--(NSMutableDictionary *) getRequestParameters;
+
+
 -(void) setRequestParams:(NSMutableDictionary *)params;
 
 
