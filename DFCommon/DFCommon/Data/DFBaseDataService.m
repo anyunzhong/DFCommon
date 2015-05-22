@@ -42,8 +42,15 @@
     
     NSLog(@"path: %@  params: %@", [self getRequestUrl], _params);
     
+    [self executeRequest];
+    
+}
+
+
+-(void)executeRequest
+{
     switch (_requestType) {
-        case DFRequestTypeGet:
+            case DFRequestTypeGet:
         {
             [_manager GET:[self getRequestUrl] parameters:_params success:^(AFHTTPRequestOperation *operation, id responseObject) {
                 [self onSuccess:responseObject];
@@ -53,12 +60,12 @@
             break;
         }
             
-        case DFRequestTypePost:
+            case DFRequestTypePost:
         {
             
             break;
         }
-        case DFRequestTypePostMultipart:
+            case DFRequestTypePostMultipart:
         {
             
             break;
@@ -66,8 +73,7 @@
         default:
             break;
     }
-    
-    
+
 }
 
 -(NSString *) getRequestUrl

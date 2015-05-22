@@ -20,6 +20,7 @@ typedef enum:NSUInteger
 }DFRequestType;
 
 
+typedef void(^ RequestSuccess)(DFBaseResponse *response);
 
 @protocol DFDataServiceDelegate <NSObject>
 
@@ -42,6 +43,8 @@ typedef enum:NSUInteger
 @property (nonatomic,strong) NSMutableDictionary *params;
 
 -(void) execute;
+
+-(void) executeRequest;
 
 -(NSString *) getRequestUrl;
 -(NSString *) getRequestPath;
