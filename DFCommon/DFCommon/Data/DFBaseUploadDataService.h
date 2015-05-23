@@ -12,4 +12,6 @@
 
 -(void) upload:(NSData *) data success:(RequestSuccess) success;
 
+-(NSString *) getFileType;
+
 @end

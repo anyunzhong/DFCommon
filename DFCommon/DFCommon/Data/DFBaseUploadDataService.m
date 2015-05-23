@@ -27,7 +27,7 @@
     
     [self.manager POST:[self getRequestUrl] parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
         
-        [formData appendPartWithFileData:data name:@"file" fileName:@"test.jpg" mimeType:@"image/jpeg"];
+        [formData appendPartWithFileData:data name:@"file" fileName:[NSString stringWithFormat:@"test.%@",[self getFileType]] mimeType:@"image/jpeg"];
         
     } success:^(AFHTTPRequestOperation *operation, id responseObject) {
 
@@ -56,5 +56,10 @@
         [self onError:error];
     }];
     
+}
+
+-(NSString *)getFileType
+{
+    return @"";
 }
 @end
