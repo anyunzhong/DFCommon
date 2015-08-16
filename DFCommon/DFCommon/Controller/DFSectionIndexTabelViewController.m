@@ -97,6 +97,22 @@
     return nil;
 }
 
+-(NSMutableArray *) getUnIndexedTitles
+{
+    return nil;
+}
+
+
+-(BOOL) isShowUnIndexedTitles
+{
+    NSMutableArray *array = [self getUnIndexedTitles];
+    if (array && array.count > 0) {
+        return YES;
+    }else{
+        return NO;
+    }
+}
+
 
 
 - (NSString *) getFirstChar:(NSString *)str
@@ -118,25 +134,60 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     
-    return [[self getFirstCharArray] objectAtIndex:section];
+    if ([self isShowUnIndexedTitles]) {
+        if (section == 0) {
+            return @"";
+        }else{
+            return [[self getFirstCharArray] objectAtIndex:(section-1)];
+        }
+    }else{
+        return [[self getFirstCharArray] objectAtIndex:section];
+    }
+    
+    
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    
+    
+    if ([self isShowUnIndexedTitles]) {
+        return [self getFirstCharArray].count+1;
+    }
     return [self getFirstCharArray].count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return 1;
+    if ([self isShowUnIndexedTitles]) {
+        
+        if (section == 0) {
+            return [self getUnIndexedTitles].count;
+        }else{
+            NSString *firstChar = [[self getFirstCharArray] objectAtIndex:(section-1)];
+            NSMutableArray *sectionTitles = [_titleDic objectForKey:firstChar];
+            return sectionTitles.count;
+        }
+        
+    }else{
+        NSString *firstChar = [[self getFirstCharArray] objectAtIndex:section];
+        NSMutableArray *sectionTitles = [_titleDic objectForKey:firstChar];
+        return sectionTitles.count;
+    }
 }
 
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [self tableViewCellAtIndex:[self getIndex:indexPath] tableView:tableView];
     
-    
-    return cell;
+    if ([self isShowUnIndexedTitles] && indexPath.section == 0) {
+        
+        UITableViewCell *cell = [self tableViewUnIndexedCellAtIndex:indexPath.row tableView:tableView];
+        return cell;
+        
+    }else{
+        UITableViewCell *cell = [self tableViewCellAtIndex:[self getIndex:indexPath] tableView:tableView];
+        return cell;
+    }
 }
 
 
@@ -158,7 +209,16 @@
     return cell;
 }
 
+-(UITableViewCell *)tableViewUnIndexedCellAtIndex:(NSUInteger)index tableView:(UITableView *)tableView
+{
+    return nil;
+}
+
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    
+    if ([self isShowUnIndexedTitles] && section == 0) {
+        return 0.01;
+    }
     return 30;
 }
 
@@ -171,6 +231,9 @@
 -(NSInteger) getIndex:(NSIndexPath *) indexPath
 {
     NSInteger section = indexPath.section;
+    if ([self isShowUnIndexedTitles]) {
+        section = section - 1;
+    }
     NSInteger row = indexPath.row;
     NSArray *array = [self getFirstCharArray];
     NSString *firstChar = [array objectAtIndex:section];
@@ -183,12 +246,22 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    [self onClickIndex:[self getIndex:indexPath]];
+    if ([self isShowUnIndexedTitles] && indexPath.section == 0) {
+        
+        [self onClickUnIndexTitlesIndex:indexPath.row];
+    }else{
+        
+        [self onClickIndex:[self getIndex:indexPath]];
+    }
 }
 
 -(void)onClickIndex:(NSInteger)index
 {
     NSLog(@"%@",[[self getTitles] objectAtIndex:index]);
+}
+
+-(void)onClickUnIndexTitlesIndex:(NSInteger)index{
+    
 }
 
 @end

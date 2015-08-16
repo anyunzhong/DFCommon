@@ -11,6 +11,14 @@
 @interface DFSectionIndexTabelViewController : DFBaseTableViewController
 
 -(NSMutableArray *) getTitles;
+-(NSMutableArray *) getUnIndexedTitles;
+
+
 -(void) onClickIndex:(NSInteger)index;
+-(void) onClickUnIndexTitlesIndex:(NSInteger)index;
+
+
+
 -(UITableViewCell *) tableViewCellAtIndex:(NSUInteger)index tableView:(UITableView *)tableView;
+-(UITableViewCell *) tableViewUnIndexedCellAtIndex:(NSUInteger)index tableView:(UITableView *)tableView;
 @end
