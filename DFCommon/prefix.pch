@@ -1,0 +1,17 @@
+//
+//  prefix.pch
+//  DFCommon
+//
+//  Created by Allen Zhong on 15/8/28.
+//  Copyright (c) 2015年 Datafans, Inc. All rights reserved.
+//
+
+#ifndef DFCommon_prefix_pch
+#define DFCommon_prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//#import "DFCommon.h"
+
+#endif

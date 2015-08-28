@@ -9,6 +9,8 @@
 #import "DFCommonRegisterController.h"
 #import "UIButton+Corner.h"
 
+#import "UIBarButtonItem+Lite.h"
+
 #define VerifyCodeResendInterval 60
 
 @interface DFCommonRegisterController()<UITextFieldDelegate>

@@ -7,6 +7,8 @@
  *
  */
 
+#import <Foundation/Foundation.h>
+
 char pinyinFirstLetter(unsigned short hanzi);
 
 @interface HTFirstLetter : NSObject

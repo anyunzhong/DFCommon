@@ -9,6 +9,8 @@
 #import "DFBaseDataService.h"
 #import "DFReachabilityUtil.h"
 
+#import "DFNetwork.h"
+
 @implementation DFBaseDataService
 
 #pragma mark - Lifecycle

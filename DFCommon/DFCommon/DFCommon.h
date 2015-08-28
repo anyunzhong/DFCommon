@@ -45,7 +45,7 @@
 
 //lib
 #import "LXActionSheet.h"
-#import "RRDevice.h"
+//#import "RRDevice.h"
 #import "DFSandboxHelper.h"
 
 #endif
