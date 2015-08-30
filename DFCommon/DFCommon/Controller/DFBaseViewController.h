@@ -14,12 +14,37 @@
 @interface DFBaseViewController : UIViewController<DFDataServiceDelegate>
 
 
-@property (strong,nonatomic) MBProgressHUD *hudTextView;
-
-
+//普通文本
 -(void) hudShowText:(NSString *)text;
 -(void) hudShowText:(NSString *)text second:(NSInteger)second;
 
+//加载状态
+-(MBProgressHUD *) hudShowLoading;
+-(MBProgressHUD *) hudShowLoading:(NSString *)text;
+
+//成功或失败提示
+-(void) hudShowOk:(NSString *) text;
+-(void) hudShowFail:(NSString *) text;
+
+-(void) hudShowIcon:(NSString *) icon text:(NSString *) text;
+
+
 -(UIBarButtonItem *) rightBarButtonItem;
 -(UIBarButtonItem *) leftBarButtonItem;
+
+
+-(BOOL) enableAutoLoadStateView;
+
+-(void) showLoadingView;
+-(void) hideLoadingView;
+
+
+-(void) showLoadFailView;
+-(void) hideLoadFailView;
+
+
+-(void) onClickLoadFailView;
+
+
+
 @end

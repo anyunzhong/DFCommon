@@ -11,6 +11,16 @@
 
 #import "DFNetwork.h"
 
+
+@interface DFBaseDataService()
+
+@property (nonatomic,strong) NSMutableDictionary *params;
+
+
+@end
+
+
+
 @implementation DFBaseDataService
 
 #pragma mark - Lifecycle

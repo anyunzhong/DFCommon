@@ -36,18 +36,17 @@ typedef void(^ RequestSuccess)(DFBaseResponse *response);
 
 @property (nonatomic,assign) id<DFDataServiceDelegate> delegate;
 
-@property (nonatomic,strong) AFHTTPRequestOperationManager *manager;
-
 @property (nonatomic,assign) DFRequestType requestType;
 
-@property (nonatomic,strong) NSMutableDictionary *params;
+@property (nonatomic,strong) AFHTTPRequestOperationManager *manager;
 
 -(void) execute;
 
--(void) executeRequest;
-
 -(NSString *) getRequestUrl;
+
 -(NSString *) getRequestPath;
+
+-(NSString *) getRequestDomain;
 
 
 -(void) setRequestParams:(NSMutableDictionary *)params;

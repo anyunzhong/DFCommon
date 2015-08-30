@@ -24,9 +24,9 @@
 #endif
 
 
-static const CGFloat kPadding = 4.f;
-static const CGFloat kLabelFontSize = 16.f;
-static const CGFloat kDetailsLabelFontSize = 12.f;
+static const CGFloat kPadding = 10.f;
+static const CGFloat kLabelFontSize = 14.f;
+static const CGFloat kDetailsLabelFontSize = 11.f;
 
 
 @interface MBProgressHUD ()
@@ -163,14 +163,14 @@ static const CGFloat kDetailsLabelFontSize = 12.f;
 		self.mode = MBProgressHUDModeIndeterminate;
 		self.labelText = nil;
 		self.detailsLabelText = nil;
-		self.opacity = 0.8f;
+		self.opacity = 0.7f;
         self.color = nil;
 		self.labelFont = [UIFont boldSystemFontOfSize:kLabelFontSize];
 		self.detailsLabelFont = [UIFont boldSystemFontOfSize:kDetailsLabelFontSize];
 		self.xOffset = 0.0f;
 		self.yOffset = 0.0f;
 		self.dimBackground = NO;
-		self.margin = 20.0f;
+		self.margin = 10.0f;
 		self.graceTime = 0.0f;
 		self.minShowTime = 0.0f;
 		self.removeFromSuperViewOnHide = NO;
