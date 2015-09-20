@@ -23,6 +23,8 @@
     self = [super init];
     if (self) {
         self.style = UITableViewStyleGrouped;
+        self.bAddHeader = YES;
+        self.bAddFooter = YES;
         
     }
     return self;
@@ -34,9 +36,10 @@
     _service = [[DemoHttpService alloc] init];
     _service.delegate = self;
     
-    [_service execute];
-    
 }
+
+
+
 
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -90,6 +93,17 @@
     
     
     
+}
+
+
+-(void)startRefresh{
+    
+    [_service execute];
+}
+
+-(void)startLoadMore
+{
+    [_service execute];
 }
 
 -(void)onClickLoadFailView
