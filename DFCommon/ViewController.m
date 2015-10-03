@@ -27,7 +27,8 @@
         self.bAddHeader = YES;
         self.bAddFooter = YES;
         
-        self.refreshFooterControlType = DFTableViewRefreshControlTypeMJ;
+        self.refreshFooterControlType = DFTableViewRefreshControlTypeEGO;
+        //self.refreshHeaderControlType = DFTableViewRefreshControlTypeOD;
         
     }
     return self;

@@ -25,7 +25,12 @@
 -(void) addHeader
 {
     if (_refreshControl == nil) {
-        _refreshControl = [[ODRefreshControl alloc] initInScrollView:self.tableView topOffset:self.topOffset];
+       // _refreshControl = [[ODRefreshControl alloc] initInScrollView:self.tableView topOffset:self.topOffset];
+        
+        
+        
+        _refreshControl = [[ODRefreshControl alloc] initInScrollView:self.tableView];
+        
         [_refreshControl addTarget:self action:@selector(dropViewDidBeginRefreshing:) forControlEvents:UIControlEventValueChanged];
     }
 }

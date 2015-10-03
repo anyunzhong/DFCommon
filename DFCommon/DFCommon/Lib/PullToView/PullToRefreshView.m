@@ -96,12 +96,12 @@
 {
 	[scrollView removeObserver:self forKeyPath:@"contentOffset"];
 	
-    [arrowImage release];
-    [activityView release];
-    [statusLabel release];
-    [lastUpdatedLabel release];
-    
-    [super dealloc];
+//    [arrowImage release];
+//    [activityView release];
+//    [statusLabel release];
+//    [lastUpdatedLabel release];
+//    
+//    [super dealloc];
 }
 
 
@@ -119,7 +119,7 @@
     [formatter setPMSymbol:@"PM"];
     [formatter setDateFormat:@"MM/dd/yy hh:mm a"];
     lastUpdatedLabel.text = [NSString stringWithFormat:@"上次更新: %@", [formatter stringFromDate:date]];
-    [formatter release];
+    //[formatter release];
 }
 
 - (void)setTextShadowColor:(UIColor *)textShadowColor

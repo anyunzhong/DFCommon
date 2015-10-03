@@ -41,7 +41,7 @@ typedef enum {
 
 @interface PullToRefreshView : UIView
 {
-	id <PullToRefreshViewDelegate> delegate;
+	__unsafe_unretained id <PullToRefreshViewDelegate> delegate;
     UIScrollView *scrollView;
 	PullToRefreshViewState state;
     

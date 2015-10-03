@@ -104,7 +104,7 @@
         self.refreshTableHeaderView.delegate = self;
         self.refreshTableHeaderView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleBottomMargin;
         //self.refreshTableHeaderView.backgroundColor = [UIColor redColor];
-        self.refreshTableHeaderView.bIsTransparent = YES;
+        //self.refreshTableHeaderView.bIsTransparent = YES;
         
     }
     [self.tableView addSubview:self.refreshTableHeaderView];

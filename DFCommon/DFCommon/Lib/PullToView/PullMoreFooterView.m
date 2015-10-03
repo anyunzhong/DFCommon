@@ -17,7 +17,8 @@
     {
         self.backgroundColor = [UIColor clearColor];
         
-        scrollView = [scroll retain];
+        //scrollView = [scroll retain];
+        scrollView = scroll;
         [scrollView addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:NULL];
         
         [scrollView addObserver:self forKeyPath:@"contentSize" options:NSKeyValueObservingOptionNew context:NULL];
@@ -129,11 +130,11 @@
 {
     [scrollView removeObserver:self forKeyPath:@"contentOffset"];
     [scrollView removeObserver:self forKeyPath:@"contentSize"];
-    [scrollView release];
-    [_statusLabel release];
-    [_activityView release];
+//    [scrollView release];
+//    [_statusLabel release];
+//    [_activityView release];
     self.delegate = nil;
-    [super dealloc];
+    //[super dealloc];
 }
 
 - (void)setState:(PullMoreState)aState
