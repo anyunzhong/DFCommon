@@ -105,7 +105,8 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-  s.resources = "DFCommon/DFCommon/Resource/*.png", "DFCommon/DFCommon/Resource/*.plist", "DFCommon/DFCommon/Resource/*.bundle"
+  s.resources = "DFCommon/DFCommon/Resource/*.*"
+  #"DFCommon/DFCommon/Resource/*.plist", "DFCommon/DFCommon/Resource/*.bundle"
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
 
