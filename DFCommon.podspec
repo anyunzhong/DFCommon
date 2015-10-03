@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "DFCommon"
-  s.version      = "1.1.0"
+  s.version      = "1.2.0"
   s.summary      = "快速开发ios app，封装了ios开发常用的功能"
 
   # This description is used to generate tags and improve search results.
@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/anyunzhong/DFCommon.git", :tag => "1.1.0" }
+  s.source       = { :git => "https://github.com/anyunzhong/DFCommon.git", :tag => "1.2.0" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -105,8 +105,7 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-  s.resources = "DFCommon/DFCommon/Resource/*.png"
-
+  s.resources = "DFCommon/DFCommon/Resource/*.png", "DFCommon/DFCommon/Resource/*.plist", "DFCommon/DFCommon/Resource/*.bundle"
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
 
