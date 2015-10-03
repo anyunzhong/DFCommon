@@ -22,9 +22,12 @@
 {
     self = [super init];
     if (self) {
-        self.style = UITableViewStyleGrouped;
+        self.style = UITableViewStylePlain;
+        
         self.bAddHeader = YES;
         self.bAddFooter = YES;
+        
+        self.refreshFooterControlType = DFTableViewRefreshControlTypeMJ;
         
     }
     return self;

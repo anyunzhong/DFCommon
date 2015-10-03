@@ -52,7 +52,6 @@
 		1181FCB81B9005F60005E3AA /* refreshBlueArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1181FC441B9005F60005E3AA /* refreshBlueArrow.png */; };
 		1181FCB91B9005F60005E3AA /* refreshBlueArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1181FC451B9005F60005E3AA /* refreshBlueArrow@2x.png */; };
 		1181FCBA1B9005F60005E3AA /* LoadMoreTableFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181FC471B9005F60005E3AA /* LoadMoreTableFooterView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		1181FCBB1B9005F60005E3AA /* WJFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181FC491B9005F60005E3AA /* WJFooterView.m */; };
 		1181FCBC1B9005F60005E3AA /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181FC4C1B9005F60005E3AA /* FMDatabase.m */; };
 		1181FCBD1B9005F60005E3AA /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181FC4E1B9005F60005E3AA /* FMDatabaseAdditions.m */; };
 		1181FCBE1B9005F60005E3AA /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181FC501B9005F60005E3AA /* FMDatabasePool.m */; };
@@ -166,8 +165,6 @@
 		1181FC451B9005F60005E3AA /* refreshBlueArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "refreshBlueArrow@2x.png"; sourceTree = "<group>"; };
 		1181FC461B9005F60005E3AA /* LoadMoreTableFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadMoreTableFooterView.h; sourceTree = "<group>"; };
 		1181FC471B9005F60005E3AA /* LoadMoreTableFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadMoreTableFooterView.m; sourceTree = "<group>"; };
-		1181FC481B9005F60005E3AA /* WJFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJFooterView.h; sourceTree = "<group>"; };
-		1181FC491B9005F60005E3AA /* WJFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJFooterView.m; sourceTree = "<group>"; };
 		1181FC4B1B9005F60005E3AA /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
 		1181FC4C1B9005F60005E3AA /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
 		1181FC4D1B9005F60005E3AA /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
@@ -454,8 +451,6 @@
 				1181FC411B9005F60005E3AA /* Images */,
 				1181FC461B9005F60005E3AA /* LoadMoreTableFooterView.h */,
 				1181FC471B9005F60005E3AA /* LoadMoreTableFooterView.m */,
-				1181FC481B9005F60005E3AA /* WJFooterView.h */,
-				1181FC491B9005F60005E3AA /* WJFooterView.m */,
 			);
 			path = EGOTableViewPullRefresh;
 			sourceTree = "<group>";
@@ -740,7 +735,6 @@
 				1181FCB01B9005F60005E3AA /* AFSecurityPolicy.m in Sources */,
 				1181FC9A1B9005F60005E3AA /* NSMutableDictionary+JSON.m in Sources */,
 				110FA2831AF3FEF900771420 /* AppDelegate.m in Sources */,
-				1181FCBB1B9005F60005E3AA /* WJFooterView.m in Sources */,
 				1181FCBE1B9005F60005E3AA /* FMDatabasePool.m in Sources */,
 				1181FC991B9005F60005E3AA /* NSDictionary+JSON.m in Sources */,
 				1181FCAD1B9005F60005E3AA /* AFHTTPRequestOperationManager.m in Sources */,
