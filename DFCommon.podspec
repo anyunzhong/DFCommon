@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "DFCommon"
-  s.version      = "1.0.0"
+  s.version      = "1.1.0"
   s.summary      = "快速开发ios app，封装了ios开发常用的功能"
 
   # This description is used to generate tags and improve search results.
@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/anyunzhong/DFCommon.git", :tag => "1.0.0" }
+  s.source       = { :git => "https://github.com/anyunzhong/DFCommon.git", :tag => "1.1.0" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -133,5 +133,19 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
+
+
+
+s.dependency 'AFNetworking', '~> 2.6.0'
+s.dependency 'SDWebImage', '~> 3.7.3'
+s.dependency 'FMDB', '~> 2.5'
+s.dependency 'MBProgressHUD', '~> 0.9.1'
+s.dependency 'MLLabel', '~> 1.7'
+
+s.dependency 'EGOTableViewPullRefresh', '~> 0.1.0'
+s.dependency 'MJRefresh', '~> 2.4.11'
+s.dependency 'ODRefreshControl', '~> 1.2'
+s.dependency 'MJPhotoBrowser', '~> 1.0.2'
+
 
 end
