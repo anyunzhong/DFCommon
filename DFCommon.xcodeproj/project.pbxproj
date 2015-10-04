@@ -56,6 +56,7 @@
 		1181FCDF1B9006FE0005E3AA /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1181FCDE1B9006FE0005E3AA /* libsqlite3.dylib */; };
 		11E157641BBFC7B700F2F99A /* DFToolUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E157611BBFC7B700F2F99A /* DFToolUtil.m */; };
 		11E157651BBFC7B700F2F99A /* MLLabel+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E157631BBFC7B700F2F99A /* MLLabel+Size.m */; };
+		11E157A61BC0B92700F2F99A /* DFImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E157A51BC0B92700F2F99A /* DFImageHelper.m */; };
 		B0923F6901BC66A5C9206909 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61EEB9E4F9F44A2BE5542F81 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -148,6 +149,8 @@
 		11E157611BBFC7B700F2F99A /* DFToolUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFToolUtil.m; sourceTree = "<group>"; };
 		11E157621BBFC7B700F2F99A /* MLLabel+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MLLabel+Size.h"; sourceTree = "<group>"; };
 		11E157631BBFC7B700F2F99A /* MLLabel+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MLLabel+Size.m"; sourceTree = "<group>"; };
+		11E157A41BC0B92700F2F99A /* DFImageHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFImageHelper.h; sourceTree = "<group>"; };
+		11E157A51BC0B92700F2F99A /* DFImageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFImageHelper.m; sourceTree = "<group>"; };
 		61EEB9E4F9F44A2BE5542F81 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA9B74D6802BF85ED1370AC3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F935F099FB37C64E04779274 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -371,6 +374,8 @@
 				1181FC7D1B9005F60005E3AA /* DFSandboxHelper.m */,
 				1181FC7E1B9005F60005E3AA /* pinyin.h */,
 				1181FC7F1B9005F60005E3AA /* pinyin.m */,
+				11E157A41BC0B92700F2F99A /* DFImageHelper.h */,
+				11E157A51BC0B92700F2F99A /* DFImageHelper.m */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -577,6 +582,7 @@
 				110FA2861AF3FEF900771420 /* ViewController.m in Sources */,
 				1181FCD11B9005F60005E3AA /* DFSandboxHelper.m in Sources */,
 				1181FCAA1B9005F60005E3AA /* DFBaseResponse.m in Sources */,
+				11E157A61BC0B92700F2F99A /* DFImageHelper.m in Sources */,
 				1181FCD01B9005F60005E3AA /* Reachability.m in Sources */,
 				1181FCCE1B9005F60005E3AA /* PullToRefreshView.m in Sources */,
 				1181FCDC1B9005F60005E3AA /* DFUserDefaultStorageService.m in Sources */,
