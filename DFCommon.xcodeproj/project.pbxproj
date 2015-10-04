@@ -55,8 +55,15 @@
 		1181FCDC1B9005F60005E3AA /* DFUserDefaultStorageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181FC981B9005F60005E3AA /* DFUserDefaultStorageService.m */; };
 		1181FCDF1B9006FE0005E3AA /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1181FCDE1B9006FE0005E3AA /* libsqlite3.dylib */; };
 		11E157641BBFC7B700F2F99A /* DFToolUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E157611BBFC7B700F2F99A /* DFToolUtil.m */; };
-		11E157651BBFC7B700F2F99A /* MLLabel+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E157631BBFC7B700F2F99A /* MLLabel+Size.m */; };
 		11E157A61BC0B92700F2F99A /* DFImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E157A51BC0B92700F2F99A /* DFImageHelper.m */; };
+		11E157B51BC0C2D500F2F99A /* JSBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E157AB1BC0C2D500F2F99A /* JSBadgeView.m */; };
+		11E157B61BC0C2D500F2F99A /* lame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11E157AD1BC0C2D500F2F99A /* lame.framework */; };
+		11E157B71BC0C2D500F2F99A /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11E157AF1BC0C2D500F2F99A /* libmp3lame.a */; };
+		11E157B81BC0C2D500F2F99A /* MP3Converter.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E157B11BC0C2D500F2F99A /* MP3Converter.m */; };
+		11E157B91BC0C2D500F2F99A /* LXActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E157B41BC0C2D500F2F99A /* LXActionSheet.m */; };
+		11E157BE1BC0C30800F2F99A /* MLLabel+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E157BB1BC0C30800F2F99A /* MLLabel+Size.m */; };
+		11E157BF1BC0C30800F2F99A /* UITabBar+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E157BD1BC0C30800F2F99A /* UITabBar+Badge.m */; };
+		11E157C51BC0C3EA00F2F99A /* RRDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E157C41BC0C3EA00F2F99A /* RRDevice.m */; };
 		B0923F6901BC66A5C9206909 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61EEB9E4F9F44A2BE5542F81 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -147,10 +154,23 @@
 		1181FCDE1B9006FE0005E3AA /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		11E157601BBFC7B700F2F99A /* DFToolUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFToolUtil.h; sourceTree = "<group>"; };
 		11E157611BBFC7B700F2F99A /* DFToolUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFToolUtil.m; sourceTree = "<group>"; };
-		11E157621BBFC7B700F2F99A /* MLLabel+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MLLabel+Size.h"; sourceTree = "<group>"; };
-		11E157631BBFC7B700F2F99A /* MLLabel+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MLLabel+Size.m"; sourceTree = "<group>"; };
 		11E157A41BC0B92700F2F99A /* DFImageHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFImageHelper.h; sourceTree = "<group>"; };
 		11E157A51BC0B92700F2F99A /* DFImageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFImageHelper.m; sourceTree = "<group>"; };
+		11E157AA1BC0C2D500F2F99A /* JSBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBadgeView.h; sourceTree = "<group>"; };
+		11E157AB1BC0C2D500F2F99A /* JSBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSBadgeView.m; sourceTree = "<group>"; };
+		11E157AD1BC0C2D500F2F99A /* lame.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = lame.framework; sourceTree = "<group>"; };
+		11E157AE1BC0C2D500F2F99A /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
+		11E157AF1BC0C2D500F2F99A /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
+		11E157B01BC0C2D500F2F99A /* MP3Converter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MP3Converter.h; sourceTree = "<group>"; };
+		11E157B11BC0C2D500F2F99A /* MP3Converter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MP3Converter.m; sourceTree = "<group>"; };
+		11E157B31BC0C2D500F2F99A /* LXActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXActionSheet.h; sourceTree = "<group>"; };
+		11E157B41BC0C2D500F2F99A /* LXActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXActionSheet.m; sourceTree = "<group>"; };
+		11E157BA1BC0C30800F2F99A /* MLLabel+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MLLabel+Size.h"; sourceTree = "<group>"; };
+		11E157BB1BC0C30800F2F99A /* MLLabel+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MLLabel+Size.m"; sourceTree = "<group>"; };
+		11E157BC1BC0C30800F2F99A /* UITabBar+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+Badge.h"; sourceTree = "<group>"; };
+		11E157BD1BC0C30800F2F99A /* UITabBar+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+Badge.m"; sourceTree = "<group>"; };
+		11E157C31BC0C3EA00F2F99A /* RRDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRDevice.h; sourceTree = "<group>"; };
+		11E157C41BC0C3EA00F2F99A /* RRDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRDevice.m; sourceTree = "<group>"; };
 		61EEB9E4F9F44A2BE5542F81 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA9B74D6802BF85ED1370AC3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F935F099FB37C64E04779274 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -162,6 +182,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1181FCDF1B9006FE0005E3AA /* libsqlite3.dylib in Frameworks */,
+				11E157B71BC0C2D500F2F99A /* libmp3lame.a in Frameworks */,
+				11E157B61BC0C2D500F2F99A /* lame.framework in Frameworks */,
 				B0923F6901BC66A5C9206909 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +263,10 @@
 		1181FC001B9005F60005E3AA /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				11E157BA1BC0C30800F2F99A /* MLLabel+Size.h */,
+				11E157BB1BC0C30800F2F99A /* MLLabel+Size.m */,
+				11E157BC1BC0C30800F2F99A /* UITabBar+Badge.h */,
+				11E157BD1BC0C30800F2F99A /* UITabBar+Badge.m */,
 				1181FC011B9005F60005E3AA /* NSDictionary+JSON.h */,
 				1181FC021B9005F60005E3AA /* NSDictionary+JSON.m */,
 				1181FC031B9005F60005E3AA /* NSMutableDictionary+JSON.h */,
@@ -334,6 +360,9 @@
 		1181FC291B9005F60005E3AA /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				11E157A91BC0C2D500F2F99A /* JSBadgeView */,
+				11E157AC1BC0C2D500F2F99A /* lame */,
+				11E157B21BC0C2D500F2F99A /* LXActionSheet */,
 				1181FC711B9005F60005E3AA /* PullToView */,
 				1181FC761B9005F60005E3AA /* Reachability */,
 				1181FC7B1B9005F60005E3AA /* Util */,
@@ -366,10 +395,10 @@
 		1181FC7B1B9005F60005E3AA /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				11E157C31BC0C3EA00F2F99A /* RRDevice.h */,
+				11E157C41BC0C3EA00F2F99A /* RRDevice.m */,
 				11E157601BBFC7B700F2F99A /* DFToolUtil.h */,
 				11E157611BBFC7B700F2F99A /* DFToolUtil.m */,
-				11E157621BBFC7B700F2F99A /* MLLabel+Size.h */,
-				11E157631BBFC7B700F2F99A /* MLLabel+Size.m */,
 				1181FC7C1B9005F60005E3AA /* DFSandboxHelper.h */,
 				1181FC7D1B9005F60005E3AA /* DFSandboxHelper.m */,
 				1181FC7E1B9005F60005E3AA /* pinyin.h */,
@@ -433,6 +462,36 @@
 				1181FC981B9005F60005E3AA /* DFUserDefaultStorageService.m */,
 			);
 			path = Storage;
+			sourceTree = "<group>";
+		};
+		11E157A91BC0C2D500F2F99A /* JSBadgeView */ = {
+			isa = PBXGroup;
+			children = (
+				11E157AA1BC0C2D500F2F99A /* JSBadgeView.h */,
+				11E157AB1BC0C2D500F2F99A /* JSBadgeView.m */,
+			);
+			path = JSBadgeView;
+			sourceTree = "<group>";
+		};
+		11E157AC1BC0C2D500F2F99A /* lame */ = {
+			isa = PBXGroup;
+			children = (
+				11E157AD1BC0C2D500F2F99A /* lame.framework */,
+				11E157AE1BC0C2D500F2F99A /* lame.h */,
+				11E157AF1BC0C2D500F2F99A /* libmp3lame.a */,
+				11E157B01BC0C2D500F2F99A /* MP3Converter.h */,
+				11E157B11BC0C2D500F2F99A /* MP3Converter.m */,
+			);
+			path = lame;
+			sourceTree = "<group>";
+		};
+		11E157B21BC0C2D500F2F99A /* LXActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				11E157B31BC0C2D500F2F99A /* LXActionSheet.h */,
+				11E157B41BC0C2D500F2F99A /* LXActionSheet.m */,
+			);
+			path = LXActionSheet;
 			sourceTree = "<group>";
 		};
 		B52626CF9170D201278D2124 /* Pods */ = {
@@ -577,6 +636,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11E157BE1BC0C30800F2F99A /* MLLabel+Size.m in Sources */,
 				1181FCD51B9005F60005E3AA /* DFTableViewNativeRefreshControl.m in Sources */,
 				1181FCD71B9005F60005E3AA /* DFTableViewRefreshControl.m in Sources */,
 				110FA2861AF3FEF900771420 /* ViewController.m in Sources */,
@@ -586,6 +646,7 @@
 				1181FCD01B9005F60005E3AA /* Reachability.m in Sources */,
 				1181FCCE1B9005F60005E3AA /* PullToRefreshView.m in Sources */,
 				1181FCDC1B9005F60005E3AA /* DFUserDefaultStorageService.m in Sources */,
+				11E157B91BC0C2D500F2F99A /* LXActionSheet.m in Sources */,
 				1181FCA71B9005F60005E3AA /* DFBaseViewController.m in Sources */,
 				1181FCA91B9005F60005E3AA /* DFBaseDataService.m in Sources */,
 				1181FCCF1B9005F60005E3AA /* DFReachabilityUtil.m in Sources */,
@@ -594,8 +655,11 @@
 				110FA2831AF3FEF900771420 /* AppDelegate.m in Sources */,
 				1181FC991B9005F60005E3AA /* NSDictionary+JSON.m in Sources */,
 				1181FCD31B9005F60005E3AA /* DFTableViewEGORefreshControl.m in Sources */,
+				11E157C51BC0C3EA00F2F99A /* RRDevice.m in Sources */,
+				11E157B81BC0C2D500F2F99A /* MP3Converter.m in Sources */,
 				1181FCDB1B9005F60005E3AA /* DFDatabaseHelper.m in Sources */,
 				1181FC9B1B9005F60005E3AA /* UIBarButtonItem+Lite.m in Sources */,
+				11E157BF1BC0C30800F2F99A /* UITabBar+Badge.m in Sources */,
 				1181FCAB1B9005F60005E3AA /* DFBaseUploadDataService.m in Sources */,
 				1181FCD41B9005F60005E3AA /* DFTableViewMJRefreshControl.m in Sources */,
 				1181FC9D1B9005F60005E3AA /* UILabel+Corner.m in Sources */,
@@ -605,12 +669,12 @@
 				1178980D1B93684E00E422FF /* DemoHttpService.m in Sources */,
 				1181FC9C1B9005F60005E3AA /* UIButton+Corner.m in Sources */,
 				1181FCA51B9005F60005E3AA /* DFBaseTabBarController.m in Sources */,
+				11E157B51BC0C2D500F2F99A /* JSBadgeView.m in Sources */,
 				1181FCDA1B9005F60005E3AA /* DFBaseStorageService.m in Sources */,
 				1181FCD21B9005F60005E3AA /* pinyin.m in Sources */,
 				1181FCCD1B9005F60005E3AA /* PullMoreFooterView.m in Sources */,
 				110FA2801AF3FEF900771420 /* main.m in Sources */,
 				1181FCD61B9005F60005E3AA /* DFTableViewODRefreshControl.m in Sources */,
-				11E157651BBFC7B700F2F99A /* MLLabel+Size.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -704,10 +768,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DFCommon/DFCommon/Lib/lame",
+				);
 				GCC_PREFIX_HEADER = DFCommon/prefix.pch;
 				INFOPLIST_FILE = DFCommon/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DFCommon/DFCommon/Lib/lame",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -719,10 +791,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DFCommon/DFCommon/Lib/lame",
+				);
 				GCC_PREFIX_HEADER = DFCommon/prefix.pch;
 				INFOPLIST_FILE = DFCommon/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DFCommon/DFCommon/Lib/lame",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
