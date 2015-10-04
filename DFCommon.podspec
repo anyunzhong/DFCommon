@@ -147,5 +147,7 @@ s.dependency 'MJRefresh', '~> 2.4.11'
 s.dependency 'ODRefreshControl', '~> 1.2'
 s.dependency 'MJPhotoBrowser', '~> 1.0.2'
 
+s.ios.vendored_frameworks = 'lame.framework'
+
 
 end
