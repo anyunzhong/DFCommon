@@ -7,7 +7,7 @@
 //
 
 
-#import "lame.h"
+#import <lame/lame.h>
 
 
 @interface MP3Converter : NSObject

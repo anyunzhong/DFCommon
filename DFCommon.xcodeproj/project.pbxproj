@@ -58,7 +58,6 @@
 		11E157A61BC0B92700F2F99A /* DFImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E157A51BC0B92700F2F99A /* DFImageHelper.m */; };
 		11E157B51BC0C2D500F2F99A /* JSBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E157AB1BC0C2D500F2F99A /* JSBadgeView.m */; };
 		11E157B61BC0C2D500F2F99A /* lame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11E157AD1BC0C2D500F2F99A /* lame.framework */; };
-		11E157B71BC0C2D500F2F99A /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11E157AF1BC0C2D500F2F99A /* libmp3lame.a */; };
 		11E157B81BC0C2D500F2F99A /* MP3Converter.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E157B11BC0C2D500F2F99A /* MP3Converter.m */; };
 		11E157B91BC0C2D500F2F99A /* LXActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E157B41BC0C2D500F2F99A /* LXActionSheet.m */; };
 		11E157BE1BC0C30800F2F99A /* MLLabel+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E157BB1BC0C30800F2F99A /* MLLabel+Size.m */; };
@@ -159,8 +158,6 @@
 		11E157AA1BC0C2D500F2F99A /* JSBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBadgeView.h; sourceTree = "<group>"; };
 		11E157AB1BC0C2D500F2F99A /* JSBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSBadgeView.m; sourceTree = "<group>"; };
 		11E157AD1BC0C2D500F2F99A /* lame.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = lame.framework; sourceTree = "<group>"; };
-		11E157AE1BC0C2D500F2F99A /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
-		11E157AF1BC0C2D500F2F99A /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
 		11E157B01BC0C2D500F2F99A /* MP3Converter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MP3Converter.h; sourceTree = "<group>"; };
 		11E157B11BC0C2D500F2F99A /* MP3Converter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MP3Converter.m; sourceTree = "<group>"; };
 		11E157B31BC0C2D500F2F99A /* LXActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXActionSheet.h; sourceTree = "<group>"; };
@@ -182,7 +179,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1181FCDF1B9006FE0005E3AA /* libsqlite3.dylib in Frameworks */,
-				11E157B71BC0C2D500F2F99A /* libmp3lame.a in Frameworks */,
 				11E157B61BC0C2D500F2F99A /* lame.framework in Frameworks */,
 				B0923F6901BC66A5C9206909 /* libPods.a in Frameworks */,
 			);
@@ -477,8 +473,6 @@
 			isa = PBXGroup;
 			children = (
 				11E157AD1BC0C2D500F2F99A /* lame.framework */,
-				11E157AE1BC0C2D500F2F99A /* lame.h */,
-				11E157AF1BC0C2D500F2F99A /* libmp3lame.a */,
 				11E157B01BC0C2D500F2F99A /* MP3Converter.h */,
 				11E157B11BC0C2D500F2F99A /* MP3Converter.m */,
 			);
