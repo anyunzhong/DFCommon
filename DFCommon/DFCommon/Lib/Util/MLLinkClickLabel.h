@@ -12,7 +12,7 @@
 
 @optional
 
--(void) onClickOutsideLink;
+-(void) onClickOutsideLink:(long long) uniqueId;
 -(void) onLongPress;
 
 @end
@@ -20,5 +20,8 @@
 @interface MLLinkClickLabel : MLLinkLabel
 
 @property (nonatomic, assign) id<MLLinkClickLabelDelegate> clickDelegate;
+
+@property (nonatomic, assign) long long uniqueId;
+
 
 @end

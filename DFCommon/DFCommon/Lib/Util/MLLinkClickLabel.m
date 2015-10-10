@@ -32,8 +32,8 @@
     MLLink *link = [self linkAtPoint:[touch locationInView:self]];
     if (!link) {
         NSLog(@"单击了非链接部分");
-        if (_clickDelegate && [_clickDelegate respondsToSelector:@selector(onClickOutsideLink)]) {
-            [_clickDelegate onClickOutsideLink];
+        if (_clickDelegate && [_clickDelegate respondsToSelector:@selector(onClickOutsideLink:)]) {
+            [_clickDelegate onClickOutsideLink:_uniqueId];
         }
     }
     
