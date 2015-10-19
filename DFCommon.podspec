@@ -37,6 +37,7 @@ Pod::Spec.new do |s|
   s.dependency 'MJRefresh', '~> 2.4.11'
   s.dependency 'ODRefreshControl', '~> 1.2'
   s.dependency 'MJPhotoBrowser', '~> 1.0.2'
+  s.dependency 'MMPopupView', '~> 1.3'
 
   s.vendored_frameworks = "DFCommon/DFCommon/Lib/lame/lame.framework"
 

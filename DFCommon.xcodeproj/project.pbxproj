@@ -64,6 +64,7 @@
 		11E157BF1BC0C30800F2F99A /* UITabBar+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E157BD1BC0C30800F2F99A /* UITabBar+Badge.m */; };
 		11E157C51BC0C3EA00F2F99A /* RRDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E157C41BC0C3EA00F2F99A /* RRDevice.m */; };
 		11E157CB1BC8BD8E00F2F99A /* MLLinkClickLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E157CA1BC8BD8E00F2F99A /* MLLinkClickLabel.m */; };
+		11F080421BD54CCC0084DAA3 /* DFTabIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F080411BD54CCC0084DAA3 /* DFTabIndicatorView.m */; };
 		B0923F6901BC66A5C9206909 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61EEB9E4F9F44A2BE5542F81 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -171,6 +172,8 @@
 		11E157C41BC0C3EA00F2F99A /* RRDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRDevice.m; sourceTree = "<group>"; };
 		11E157C91BC8BD8E00F2F99A /* MLLinkClickLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLLinkClickLabel.h; sourceTree = "<group>"; };
 		11E157CA1BC8BD8E00F2F99A /* MLLinkClickLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLLinkClickLabel.m; sourceTree = "<group>"; };
+		11F080401BD54CCC0084DAA3 /* DFTabIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFTabIndicatorView.h; sourceTree = "<group>"; };
+		11F080411BD54CCC0084DAA3 /* DFTabIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFTabIndicatorView.m; sourceTree = "<group>"; };
 		61EEB9E4F9F44A2BE5542F81 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA9B74D6802BF85ED1370AC3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F935F099FB37C64E04779274 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -359,6 +362,7 @@
 		1181FC291B9005F60005E3AA /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				11F0803F1BD54CCC0084DAA3 /* DFTabIndicator */,
 				11E157A91BC0C2D500F2F99A /* JSBadgeView */,
 				11E157AC1BC0C2D500F2F99A /* lame */,
 				11E157B21BC0C2D500F2F99A /* LXActionSheet */,
@@ -491,6 +495,15 @@
 				11E157B41BC0C2D500F2F99A /* LXActionSheet.m */,
 			);
 			path = LXActionSheet;
+			sourceTree = "<group>";
+		};
+		11F0803F1BD54CCC0084DAA3 /* DFTabIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				11F080401BD54CCC0084DAA3 /* DFTabIndicatorView.h */,
+				11F080411BD54CCC0084DAA3 /* DFTabIndicatorView.m */,
+			);
+			path = DFTabIndicator;
 			sourceTree = "<group>";
 		};
 		B52626CF9170D201278D2124 /* Pods */ = {
@@ -668,6 +681,7 @@
 				1181FCA81B9005F60005E3AA /* DFSectionIndexTabelViewController.m in Sources */,
 				1178980D1B93684E00E422FF /* DemoHttpService.m in Sources */,
 				1181FC9C1B9005F60005E3AA /* UIButton+Corner.m in Sources */,
+				11F080421BD54CCC0084DAA3 /* DFTabIndicatorView.m in Sources */,
 				1181FCA51B9005F60005E3AA /* DFBaseTabBarController.m in Sources */,
 				11E157B51BC0C2D500F2F99A /* JSBadgeView.m in Sources */,
 				1181FCDA1B9005F60005E3AA /* DFBaseStorageService.m in Sources */,
