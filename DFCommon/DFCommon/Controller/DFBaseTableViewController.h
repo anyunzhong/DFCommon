@@ -11,7 +11,7 @@
 
 #import "DFTableViewNativeRefreshControl.h"
 #import "DFTableViewMJRefreshControl.h"
-#import "DFTableViewEGORefreshControl.h"
+//#import "DFTableViewEGORefreshControl.h"
 #import "DFTableViewODRefreshControl.h"
 
 
@@ -19,7 +19,7 @@ typedef NS_ENUM(NSInteger,DFTableViewRefreshControlType)
 {
     DFTableViewRefreshControlTypeNative,
     DFTableViewRefreshControlTypeMJ,
-    DFTableViewRefreshControlTypeEGO,
+    //DFTableViewRefreshControlTypeEGO,
     DFTableViewRefreshControlTypeOD,
     
 };

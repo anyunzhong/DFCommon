@@ -19,7 +19,7 @@
     if (self) {
         self.style = UITableViewStylePlain;
         self.refreshHeaderControlType = DFTableViewRefreshControlTypeNative;
-        self.refreshFooterControlType = DFTableViewRefreshControlTypeEGO;
+        self.refreshFooterControlType = DFTableViewRefreshControlTypeMJ;
         self.bAddHeader = NO;
         self.bAddFooter = NO;
         
@@ -28,7 +28,7 @@
         
         _refreshControlDic = [NSMutableDictionary dictionary];
         [_refreshControlDic setObject:[DFTableViewNativeRefreshControl class] forKey:[NSNumber numberWithInteger:DFTableViewRefreshControlTypeNative]];
-        [_refreshControlDic setObject:[DFTableViewEGORefreshControl class] forKey:[NSNumber numberWithInteger:DFTableViewRefreshControlTypeEGO]];
+//        [_refreshControlDic setObject:[DFTableViewEGORefreshControl class] forKey:[NSNumber numberWithInteger:DFTableViewRefreshControlTypeEGO]];
         [_refreshControlDic setObject:[DFTableViewMJRefreshControl class] forKey:[NSNumber numberWithInteger:DFTableViewRefreshControlTypeMJ]];
         [_refreshControlDic setObject:[DFTableViewODRefreshControl class] forKey:[NSNumber numberWithInteger:DFTableViewRefreshControlTypeOD]];
     }
@@ -214,16 +214,16 @@
 {
     [super onRequestError:error];
     
-    BOOL reload = self.refreshFooterControlType == DFTableViewRefreshControlTypeEGO?YES:NO;
-    [self onEnd:reload];
+    //BOOL reload = self.refreshFooterControlType == DFTableViewRefreshControlTypeEGO?YES:NO;
+    [self onEnd:NO];
 }
 
 -(void)onStatusError:(DFBaseResponse *)response
 {
     [super onStatusError:response];
     
-    BOOL reload = self.refreshFooterControlType == DFTableViewRefreshControlTypeEGO?YES:NO;
-    [self onEnd:reload];
+    //BOOL reload = self.refreshFooterControlType == DFTableViewRefreshControlTypeEGO?YES:NO;
+    [self onEnd:NO];
 }
 
 - (void)onStatusOk:(DFBaseResponse *)response classType:(Class)classType

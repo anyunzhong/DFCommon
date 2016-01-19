@@ -41,7 +41,6 @@
 		1181FCD01B9005F60005E3AA /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181FC7A1B9005F60005E3AA /* Reachability.m */; };
 		1181FCD11B9005F60005E3AA /* DFSandboxHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181FC7D1B9005F60005E3AA /* DFSandboxHelper.m */; };
 		1181FCD21B9005F60005E3AA /* pinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181FC7F1B9005F60005E3AA /* pinyin.m */; };
-		1181FCD31B9005F60005E3AA /* DFTableViewEGORefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181FC861B9005F60005E3AA /* DFTableViewEGORefreshControl.m */; };
 		1181FCD41B9005F60005E3AA /* DFTableViewMJRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181FC881B9005F60005E3AA /* DFTableViewMJRefreshControl.m */; };
 		1181FCD51B9005F60005E3AA /* DFTableViewNativeRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181FC8A1B9005F60005E3AA /* DFTableViewNativeRefreshControl.m */; };
 		1181FCD61B9005F60005E3AA /* DFTableViewODRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181FC8C1B9005F60005E3AA /* DFTableViewODRefreshControl.m */; };
@@ -130,8 +129,6 @@
 		1181FC811B9005F60005E3AA /* DFDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFDevice.h; sourceTree = "<group>"; };
 		1181FC821B9005F60005E3AA /* DFNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFNetwork.h; sourceTree = "<group>"; };
 		1181FC831B9005F60005E3AA /* DFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFView.h; sourceTree = "<group>"; };
-		1181FC851B9005F60005E3AA /* DFTableViewEGORefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFTableViewEGORefreshControl.h; sourceTree = "<group>"; };
-		1181FC861B9005F60005E3AA /* DFTableViewEGORefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFTableViewEGORefreshControl.m; sourceTree = "<group>"; };
 		1181FC871B9005F60005E3AA /* DFTableViewMJRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFTableViewMJRefreshControl.h; sourceTree = "<group>"; };
 		1181FC881B9005F60005E3AA /* DFTableViewMJRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFTableViewMJRefreshControl.m; sourceTree = "<group>"; };
 		1181FC891B9005F60005E3AA /* DFTableViewNativeRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFTableViewNativeRefreshControl.h; sourceTree = "<group>"; };
@@ -423,8 +420,6 @@
 		1181FC841B9005F60005E3AA /* RefreshControl */ = {
 			isa = PBXGroup;
 			children = (
-				1181FC851B9005F60005E3AA /* DFTableViewEGORefreshControl.h */,
-				1181FC861B9005F60005E3AA /* DFTableViewEGORefreshControl.m */,
 				1181FC871B9005F60005E3AA /* DFTableViewMJRefreshControl.h */,
 				1181FC881B9005F60005E3AA /* DFTableViewMJRefreshControl.m */,
 				1181FC891B9005F60005E3AA /* DFTableViewNativeRefreshControl.h */,
@@ -663,7 +658,6 @@
 				1181FC9A1B9005F60005E3AA /* NSMutableDictionary+JSON.m in Sources */,
 				110FA2831AF3FEF900771420 /* AppDelegate.m in Sources */,
 				1181FC991B9005F60005E3AA /* NSDictionary+JSON.m in Sources */,
-				1181FCD31B9005F60005E3AA /* DFTableViewEGORefreshControl.m in Sources */,
 				11E157C51BC0C3EA00F2F99A /* RRDevice.m in Sources */,
 				1181FCDB1B9005F60005E3AA /* DFDatabaseHelper.m in Sources */,
 				1181FC9B1B9005F60005E3AA /* UIBarButtonItem+Lite.m in Sources */,

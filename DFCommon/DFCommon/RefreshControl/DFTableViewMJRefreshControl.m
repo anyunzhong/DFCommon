@@ -47,7 +47,7 @@
 
 -(void) loadOver
 {
-    [self.tableView.footer noticeNoMoreData];
+    [self.tableView.footer endRefreshingWithNoMoreData];
     
 }
 

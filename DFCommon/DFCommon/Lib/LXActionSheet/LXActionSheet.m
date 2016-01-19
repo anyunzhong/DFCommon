@@ -315,7 +315,7 @@
     
     if (self.delegate) {
         if ([self.delegate respondsToSelector:@selector(didClickOnButtonIndex:)] == YES) {
-            [self.delegate didClickOnButtonIndex:(NSInteger *)button.tag];
+            [self.delegate didClickOnButtonIndex:*(NSInteger *)button.tag];
         }
     }
     
