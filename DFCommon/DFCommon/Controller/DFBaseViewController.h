@@ -31,6 +31,7 @@
 
 -(UIBarButtonItem *) rightBarButtonItem;
 -(UIBarButtonItem *) leftBarButtonItem;
+-(UIBarButtonItem *) defaultReturnBarButtonItem;
 
 
 -(BOOL) enableAutoLoadStateView;

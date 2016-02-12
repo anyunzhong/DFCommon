@@ -369,6 +369,11 @@
     return [UIBarButtonItem back:title selector:@selector(onBack:) target:self];
 }
 
+-(UIBarButtonItem *)defaultReturnBarButtonItem
+{
+    return [UIBarButtonItem back:@"返回" selector:@selector(onBack:) target:self];
+}
+
 -(void) onBack:(id) sender
 {
     [self.navigationController popViewControllerAnimated:YES];

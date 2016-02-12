@@ -7,13 +7,13 @@
 //
 
 #import "UILabel+Corner.h"
+#import "MLLabel+Size.h"
 
 @implementation UIBarButtonItem (Lite)
 
 +(UIBarButtonItem *) text:(NSString *)text selector:(SEL)selecor target:(id)target
 {
-    
-    CGFloat width = text.length *15;
+    CGFloat width = [MLLabel getViewSizeByString:text font:[UIFont systemFontOfSize:15]].width;
     UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, width, 30)];
     [button setTitle:text forState:UIControlStateNormal];
     button.titleLabel.font = [UIFont systemFontOfSize:15];
@@ -32,7 +32,7 @@
 
 +(UIBarButtonItem *) back:(NSString *)title selector:(SEL)selecor target:(id)target
 {
-    CGFloat width = title.length *15 + 20;
+    CGFloat width = [MLLabel getViewSizeByString:title font:[UIFont systemFontOfSize:15]].width+20;
     UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, width, 30)];
     [button setTitle:title forState:UIControlStateNormal];
     button.titleLabel.font = [UIFont systemFontOfSize:15];
