@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "DFCommon"
-  s.version      = "1.3.8"
+  s.version      = "1.3.9"
   s.summary      = "快速开发ios app，封装了ios开发常用的功能"
 
   s.homepage     = "https://github.com/anyunzhong/DFCommon"
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "7.0"
 
 
-  s.source       = { :git => "https://github.com/anyunzhong/DFCommon.git", :tag => "1.3.8" }
+  s.source       = { :git => "https://github.com/anyunzhong/DFCommon.git", :tag => "1.3.9" }
 
   s.source_files  = "DFCommon/DFCommon/**/*.{h,m}"
 
@@ -37,7 +37,8 @@ Pod::Spec.new do |s|
   s.dependency 'MJRefresh', '~> 2.4.11'
   s.dependency 'ODRefreshControl', '~> 1.2'
   s.dependency 'MJPhotoBrowser', '~> 1.0.2'
-  s.dependency 'MMPopupView', '~> 1.3'
+  s.dependency 'MMPopupView'
+  s.dependency 'TZImagePickerController'
 
   s.vendored_frameworks = "DFCommon/DFCommon/Lib/lame/lame.framework"
 

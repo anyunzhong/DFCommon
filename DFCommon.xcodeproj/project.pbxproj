@@ -11,6 +11,11 @@
 		110FA2831AF3FEF900771420 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 110FA2821AF3FEF900771420 /* AppDelegate.m */; };
 		110FA2861AF3FEF900771420 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 110FA2851AF3FEF900771420 /* ViewController.m */; };
 		110FA28B1AF3FEF900771420 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 110FA28A1AF3FEF900771420 /* Images.xcassets */; };
+		1173E5421C722036004C9979 /* press_btn_green@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1173E5401C722036004C9979 /* press_btn_green@2x.png */; };
+		1173E5431C722036004C9979 /* press_btn_green@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1173E5411C722036004C9979 /* press_btn_green@3x.png */; };
+		1173E54B1C722059004C9979 /* DFVideoCaptureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1173E5461C722059004C9979 /* DFVideoCaptureController.m */; };
+		1173E54C1C722059004C9979 /* DFVideoDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1173E5481C722059004C9979 /* DFVideoDecoder.m */; };
+		1173E54D1C722059004C9979 /* DFVideoPlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1173E54A1C722059004C9979 /* DFVideoPlayController.m */; };
 		117898051B933CF700E422FF /* fail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 117898031B933CF700E422FF /* fail@2x.png */; };
 		117898061B933CF700E422FF /* fail@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 117898041B933CF700E422FF /* fail@3x.png */; };
 		117898091B93640400E422FF /* refresh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 117898071B93640400E422FF /* refresh@2x.png */; };
@@ -75,6 +80,14 @@
 		110FA2841AF3FEF900771420 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		110FA2851AF3FEF900771420 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		110FA28A1AF3FEF900771420 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1173E5401C722036004C9979 /* press_btn_green@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "press_btn_green@2x.png"; sourceTree = "<group>"; };
+		1173E5411C722036004C9979 /* press_btn_green@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "press_btn_green@3x.png"; sourceTree = "<group>"; };
+		1173E5451C722059004C9979 /* DFVideoCaptureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFVideoCaptureController.h; sourceTree = "<group>"; };
+		1173E5461C722059004C9979 /* DFVideoCaptureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFVideoCaptureController.m; sourceTree = "<group>"; };
+		1173E5471C722059004C9979 /* DFVideoDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFVideoDecoder.h; sourceTree = "<group>"; };
+		1173E5481C722059004C9979 /* DFVideoDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFVideoDecoder.m; sourceTree = "<group>"; };
+		1173E5491C722059004C9979 /* DFVideoPlayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFVideoPlayController.h; sourceTree = "<group>"; };
+		1173E54A1C722059004C9979 /* DFVideoPlayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFVideoPlayController.m; sourceTree = "<group>"; };
 		117898031B933CF700E422FF /* fail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fail@2x.png"; sourceTree = "<group>"; };
 		117898041B933CF700E422FF /* fail@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fail@3x.png"; sourceTree = "<group>"; };
 		117898071B93640400E422FF /* refresh@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "refresh@2x.png"; sourceTree = "<group>"; };
@@ -239,6 +252,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		1173E5441C722059004C9979 /* DFVideo */ = {
+			isa = PBXGroup;
+			children = (
+				1173E5451C722059004C9979 /* DFVideoCaptureController.h */,
+				1173E5461C722059004C9979 /* DFVideoCaptureController.m */,
+				1173E5471C722059004C9979 /* DFVideoDecoder.h */,
+				1173E5481C722059004C9979 /* DFVideoDecoder.m */,
+				1173E5491C722059004C9979 /* DFVideoPlayController.h */,
+				1173E54A1C722059004C9979 /* DFVideoPlayController.m */,
+			);
+			path = DFVideo;
+			sourceTree = "<group>";
+		};
 		1181FBFF1B9005F60005E3AA /* DFCommon */ = {
 			isa = PBXGroup;
 			children = (
@@ -355,6 +381,7 @@
 		1181FC291B9005F60005E3AA /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				1173E5441C722059004C9979 /* DFVideo */,
 				11D581241BDB20DE00704C9E /* lame */,
 				11F0803F1BD54CCC0084DAA3 /* DFTabIndicator */,
 				11E157A91BC0C2D500F2F99A /* JSBadgeView */,
@@ -435,6 +462,8 @@
 		1181FC8F1B9005F60005E3AA /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				1173E5401C722036004C9979 /* press_btn_green@2x.png */,
+				1173E5411C722036004C9979 /* press_btn_green@3x.png */,
 				11D581201BDB203800704C9E /* success@2x.png */,
 				11D581211BDB203800704C9E /* success@3x.png */,
 				117898071B93640400E422FF /* refresh@2x.png */,
@@ -569,6 +598,8 @@
 				11D581221BDB203800704C9E /* success@2x.png in Resources */,
 				1181FCA11B9005F60005E3AA /* phone_line_dark@3x.png in Resources */,
 				1178980A1B93640400E422FF /* refresh@3x.png in Resources */,
+				1173E5421C722036004C9979 /* press_btn_green@2x.png in Resources */,
+				1173E5431C722036004C9979 /* press_btn_green@3x.png in Resources */,
 				110FA28B1AF3FEF900771420 /* Images.xcassets in Resources */,
 				1181FCD81B9005F60005E3AA /* back-arrow@2x.png in Resources */,
 				1181FCA01B9005F60005E3AA /* phone_line_dark@2x.png in Resources */,
@@ -644,6 +675,7 @@
 				1181FCD71B9005F60005E3AA /* DFTableViewRefreshControl.m in Sources */,
 				110FA2861AF3FEF900771420 /* ViewController.m in Sources */,
 				1181FCD11B9005F60005E3AA /* DFSandboxHelper.m in Sources */,
+				1173E54B1C722059004C9979 /* DFVideoCaptureController.m in Sources */,
 				1181FCAA1B9005F60005E3AA /* DFBaseResponse.m in Sources */,
 				11E157A61BC0B92700F2F99A /* DFImageHelper.m in Sources */,
 				1181FCD01B9005F60005E3AA /* Reachability.m in Sources */,
@@ -654,6 +686,7 @@
 				1181FCA71B9005F60005E3AA /* DFBaseViewController.m in Sources */,
 				1181FCA91B9005F60005E3AA /* DFBaseDataService.m in Sources */,
 				1181FCCF1B9005F60005E3AA /* DFReachabilityUtil.m in Sources */,
+				1173E54C1C722059004C9979 /* DFVideoDecoder.m in Sources */,
 				1181FCA41B9005F60005E3AA /* DFCommonRegisterController.m in Sources */,
 				1181FC9A1B9005F60005E3AA /* NSMutableDictionary+JSON.m in Sources */,
 				110FA2831AF3FEF900771420 /* AppDelegate.m in Sources */,
@@ -665,6 +698,7 @@
 				1181FCAB1B9005F60005E3AA /* DFBaseUploadDataService.m in Sources */,
 				1181FCD41B9005F60005E3AA /* DFTableViewMJRefreshControl.m in Sources */,
 				1181FC9D1B9005F60005E3AA /* UILabel+Corner.m in Sources */,
+				1173E54D1C722059004C9979 /* DFVideoPlayController.m in Sources */,
 				11E157641BBFC7B700F2F99A /* DFToolUtil.m in Sources */,
 				1181FCA61B9005F60005E3AA /* DFBaseTableViewController.m in Sources */,
 				1181FCA81B9005F60005E3AA /* DFSectionIndexTabelViewController.m in Sources */,

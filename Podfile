@@ -12,4 +12,5 @@ pod 'MJRefresh', '~> 2.4.11'
 pod 'ODRefreshControl', '~> 1.2'
 pod 'MJPhotoBrowser', '~> 1.0.2'
 
-pod 'MMPopupView', '~> 1.3'
+pod 'MMPopupView'
+pod 'TZImagePickerController'
