@@ -401,7 +401,7 @@
     
     if (_isFinished) {
         NSLog(@"开始处理视频");
-        NSString *filename= [NSString stringWithFormat:@"%d.mov", (int)[NSDate timeIntervalSinceReferenceDate]];
+        NSString *filename= [NSString stringWithFormat:@"%d.mp4", (int)[NSDate timeIntervalSinceReferenceDate]];
         NSString *scaledFilePath=[NSTemporaryDirectory() stringByAppendingString:filename];
         [self scaleAndPress:outputFileURL savePath:scaledFilePath];
     }else{
@@ -442,7 +442,7 @@
     AVAssetExportSession *avAssetExportSession = [[AVAssetExportSession alloc] initWithAsset:asset presetName:AVAssetExportPresetLowQuality];
     [avAssetExportSession setVideoComposition:videoComposition];
     [avAssetExportSession setOutputURL:[NSURL fileURLWithPath:savePath]];
-    [avAssetExportSession setOutputFileType:AVFileTypeQuickTimeMovie];
+    [avAssetExportSession setOutputFileType:AVFileTypeMPEG4];
     [avAssetExportSession setShouldOptimizeForNetworkUse:YES];
     [avAssetExportSession exportAsynchronouslyWithCompletionHandler:^(void){
         switch (avAssetExportSession.status) {
