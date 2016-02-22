@@ -138,7 +138,7 @@
 
 -(void) hudShowOk:(NSString *) text
 {
-    NSString *imageName = @"success";
+    NSString *imageName = @"check_success";
     [self hudShowIcon:imageName text:text];
 }
 

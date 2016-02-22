@@ -11,6 +11,9 @@
 		110FA2831AF3FEF900771420 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 110FA2821AF3FEF900771420 /* AppDelegate.m */; };
 		110FA2861AF3FEF900771420 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 110FA2851AF3FEF900771420 /* ViewController.m */; };
 		110FA28B1AF3FEF900771420 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 110FA28A1AF3FEF900771420 /* Images.xcassets */; };
+		115193A51C7AB9AD0089013B /* DFTableViewMJRefreshPlainControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 115193A41C7AB9AD0089013B /* DFTableViewMJRefreshPlainControl.m */; };
+		115193A81C7ABB340089013B /* DFLogoRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 115193A71C7ABB340089013B /* DFLogoRefreshControl.m */; };
+		115193AA1C7ADB2C0089013B /* check_success@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 115193A91C7ADB2C0089013B /* check_success@2x.png */; };
 		1173E5421C722036004C9979 /* press_btn_green@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1173E5401C722036004C9979 /* press_btn_green@2x.png */; };
 		1173E5431C722036004C9979 /* press_btn_green@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1173E5411C722036004C9979 /* press_btn_green@3x.png */; };
 		1173E54B1C722059004C9979 /* DFVideoCaptureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1173E5461C722059004C9979 /* DFVideoCaptureController.m */; };
@@ -80,6 +83,11 @@
 		110FA2841AF3FEF900771420 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		110FA2851AF3FEF900771420 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		110FA28A1AF3FEF900771420 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		115193A31C7AB9AD0089013B /* DFTableViewMJRefreshPlainControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFTableViewMJRefreshPlainControl.h; sourceTree = "<group>"; };
+		115193A41C7AB9AD0089013B /* DFTableViewMJRefreshPlainControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFTableViewMJRefreshPlainControl.m; sourceTree = "<group>"; };
+		115193A61C7ABB340089013B /* DFLogoRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFLogoRefreshControl.h; sourceTree = "<group>"; };
+		115193A71C7ABB340089013B /* DFLogoRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFLogoRefreshControl.m; sourceTree = "<group>"; };
+		115193A91C7ADB2C0089013B /* check_success@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check_success@2x.png"; sourceTree = "<group>"; };
 		1173E5401C722036004C9979 /* press_btn_green@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "press_btn_green@2x.png"; sourceTree = "<group>"; };
 		1173E5411C722036004C9979 /* press_btn_green@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "press_btn_green@3x.png"; sourceTree = "<group>"; };
 		1173E5451C722059004C9979 /* DFVideoCaptureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFVideoCaptureController.h; sourceTree = "<group>"; };
@@ -229,6 +237,7 @@
 		110FA27C1AF3FEF900771420 /* DFCommon */ = {
 			isa = PBXGroup;
 			children = (
+				115193A21C7AAEBF0089013B /* Demo */,
 				1181FBFF1B9005F60005E3AA /* DFCommon */,
 				110FA2811AF3FEF900771420 /* AppDelegate.h */,
 				110FA2821AF3FEF900771420 /* AppDelegate.m */,
@@ -250,6 +259,15 @@
 				110FA27F1AF3FEF900771420 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		115193A21C7AAEBF0089013B /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				115193A61C7ABB340089013B /* DFLogoRefreshControl.h */,
+				115193A71C7ABB340089013B /* DFLogoRefreshControl.m */,
+			);
+			path = Demo;
 			sourceTree = "<group>";
 		};
 		1173E5441C722059004C9979 /* DFVideo */ = {
@@ -455,6 +473,8 @@
 				1181FC8C1B9005F60005E3AA /* DFTableViewODRefreshControl.m */,
 				1181FC8D1B9005F60005E3AA /* DFTableViewRefreshControl.h */,
 				1181FC8E1B9005F60005E3AA /* DFTableViewRefreshControl.m */,
+				115193A31C7AB9AD0089013B /* DFTableViewMJRefreshPlainControl.h */,
+				115193A41C7AB9AD0089013B /* DFTableViewMJRefreshPlainControl.m */,
 			);
 			path = RefreshControl;
 			sourceTree = "<group>";
@@ -462,6 +482,7 @@
 		1181FC8F1B9005F60005E3AA /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				115193A91C7ADB2C0089013B /* check_success@2x.png */,
 				1173E5401C722036004C9979 /* press_btn_green@2x.png */,
 				1173E5411C722036004C9979 /* press_btn_green@3x.png */,
 				11D581201BDB203800704C9E /* success@2x.png */,
@@ -600,6 +621,7 @@
 				1178980A1B93640400E422FF /* refresh@3x.png in Resources */,
 				1173E5421C722036004C9979 /* press_btn_green@2x.png in Resources */,
 				1173E5431C722036004C9979 /* press_btn_green@3x.png in Resources */,
+				115193AA1C7ADB2C0089013B /* check_success@2x.png in Resources */,
 				110FA28B1AF3FEF900771420 /* Images.xcassets in Resources */,
 				1181FCD81B9005F60005E3AA /* back-arrow@2x.png in Resources */,
 				1181FCA01B9005F60005E3AA /* phone_line_dark@2x.png in Resources */,
@@ -681,6 +703,7 @@
 				1181FCD01B9005F60005E3AA /* Reachability.m in Sources */,
 				1181FCCE1B9005F60005E3AA /* PullToRefreshView.m in Sources */,
 				1181FCDC1B9005F60005E3AA /* DFUserDefaultStorageService.m in Sources */,
+				115193A81C7ABB340089013B /* DFLogoRefreshControl.m in Sources */,
 				11E157CB1BC8BD8E00F2F99A /* MLLinkClickLabel.m in Sources */,
 				11E157B91BC0C2D500F2F99A /* LXActionSheet.m in Sources */,
 				1181FCA71B9005F60005E3AA /* DFBaseViewController.m in Sources */,
@@ -707,6 +730,7 @@
 				11D581291BDB20DE00704C9E /* MP3Converter.m in Sources */,
 				11F080421BD54CCC0084DAA3 /* DFTabIndicatorView.m in Sources */,
 				1181FCA51B9005F60005E3AA /* DFBaseTabBarController.m in Sources */,
+				115193A51C7AB9AD0089013B /* DFTableViewMJRefreshPlainControl.m in Sources */,
 				11E157B51BC0C2D500F2F99A /* JSBadgeView.m in Sources */,
 				1181FCDA1B9005F60005E3AA /* DFBaseStorageService.m in Sources */,
 				1181FCD21B9005F60005E3AA /* pinyin.m in Sources */,

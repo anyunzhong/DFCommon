@@ -18,8 +18,7 @@
     self = [super init];
     if (self) {
         self.style = UITableViewStylePlain;
-        self.refreshHeaderControlType = DFTableViewRefreshControlTypeNative;
-        self.refreshFooterControlType = DFTableViewRefreshControlTypeMJ;
+        self.refreshControlType = DFTableViewRefreshControlTypeMJ;
         self.bAddHeader = NO;
         self.bAddFooter = NO;
         
@@ -27,9 +26,10 @@
         self.bottomOffset=0;
         
         _refreshControlDic = [NSMutableDictionary dictionary];
+        
         [_refreshControlDic setObject:[DFTableViewNativeRefreshControl class] forKey:[NSNumber numberWithInteger:DFTableViewRefreshControlTypeNative]];
-//        [_refreshControlDic setObject:[DFTableViewEGORefreshControl class] forKey:[NSNumber numberWithInteger:DFTableViewRefreshControlTypeEGO]];
         [_refreshControlDic setObject:[DFTableViewMJRefreshControl class] forKey:[NSNumber numberWithInteger:DFTableViewRefreshControlTypeMJ]];
+        [_refreshControlDic setObject:[DFTableViewMJRefreshPlainControl class] forKey:[NSNumber numberWithInteger:DFTableViewRefreshControlTypeMJPlain]];
         [_refreshControlDic setObject:[DFTableViewODRefreshControl class] forKey:[NSNumber numberWithInteger:DFTableViewRefreshControlTypeOD]];
     }
     return self;
@@ -74,24 +74,25 @@
 
 -(void) initRefreshControl
 {
-    
-    _refreshHeaderControl = [self getRefreshControl: self.refreshHeaderControlType];
-    
-    if (self.refreshHeaderControlType != self.refreshFooterControlType) {
-        _refreshFooterControl = [self getRefreshControl: self.refreshFooterControlType];
-    }else{
-        _refreshFooterControl = _refreshHeaderControl;
+    if (_refreshControl == nil && ( _bAddFooter || _bAddHeader)) {
+        _refreshControl = [self getRefreshControl: self.refreshControlType];
     }
+
+    if (self.refreshControlType == DFTableViewRefreshControlTypeOD) {
+        ((DFTableViewODRefreshControl *)_refreshControl).topOffset = self.topOffset+64;
+    }
+    _refreshControl.tableView = _tableView;
+    _refreshControl.delegate = self;
     
     
     if (_bAddHeader) {
         
-        [_refreshHeaderControl addHeader];
+        [_refreshControl addHeader];
         
     }
     
     if (_bAddFooter) {
-        [_refreshFooterControl addFooter];
+        [_refreshControl addFooter];
     }
     
 }
@@ -103,11 +104,6 @@
     
     DFTableViewRefreshControl  *control = (DFTableViewRefreshControl *)[[clazz alloc] init];
     
-    if (type == DFTableViewRefreshControlTypeOD) {
-        ((DFTableViewODRefreshControl *)control).topOffset = self.topOffset+64;
-    }
-    control.tableView = _tableView;
-    control.delegate = self;
     return control;
 }
 
@@ -173,7 +169,7 @@
 
 -(void) autoRefresh
 {
-    [_refreshHeaderControl autoRefresh];
+    [_refreshControl autoRefresh];
     
 }
 
@@ -190,17 +186,17 @@
 
 -(void) endRefresh
 {
-    [_refreshHeaderControl endRefresh];
+    [_refreshControl endRefresh];
 }
 -(void) endLoadMore
 {
-    [_refreshFooterControl endLoadMore];
+    [_refreshControl endLoadMore];
 }
 
 
 -(void) loadOver
 {
-    [_refreshFooterControl loadOver];
+    [_refreshControl loadOver];
     
 }
 

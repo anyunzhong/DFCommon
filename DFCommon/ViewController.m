@@ -10,6 +10,8 @@
 
 #import "DemoHttpService.h"
 
+#import "DFLogoRefreshControl.h"
+
 @interface ViewController ()
 
 @property (nonatomic, strong) DemoHttpService *service;
@@ -27,8 +29,9 @@
         self.bAddHeader = YES;
         self.bAddFooter = YES;
         
-        self.refreshFooterControlType = DFTableViewRefreshControlTypeMJ;
-        //self.refreshHeaderControlType = DFTableViewRefreshControlTypeOD;
+        DFLogoRefreshControl *control = [[DFLogoRefreshControl alloc] init];
+        self.refreshControl = control;
+//      self.refreshControlType = DFTableViewRefreshControlTypeMJPlain;
         
     }
     return self;
@@ -37,12 +40,12 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
+
     _service = [[DemoHttpService alloc] init];
     _service.delegate = self;
     
+    
 }
-
-
 
 
 

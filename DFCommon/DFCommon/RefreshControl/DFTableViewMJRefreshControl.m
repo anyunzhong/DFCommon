@@ -12,42 +12,42 @@
 
 -(void) addHeader
 {
-    //[self.tableView addHeaderWithTarget:self action:@selector(startRefresh)];
-    
-    self.tableView.header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(startRefresh)];
 
+    MJRefreshNormalHeader *header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(startRefresh)];
+    
+    self.tableView.mj_header = header;
 }
 
 
 -(void) addFooter
 {
-    //[self.tableView addFooterWithTarget:self action:@selector(startLoadMore)];
-    self.tableView.footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(startLoadMore)];
+
+    MJRefreshBackNormalFooter *footer = [MJRefreshBackNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(startLoadMore)];
+    self.tableView.mj_footer = footer;
 }
 
 -(void) autoRefresh
 {
-    //[self.tableView headerBeginRefreshing];
-    [self.tableView.header beginRefreshing];
+
+    [self.tableView.mj_header beginRefreshing];
 }
 
 
 -(void) endRefresh
 {
-    //[self.tableView headerEndRefreshing];
-    [self.tableView.header endRefreshing];
+
+    [self.tableView.mj_header endRefreshing];
 }
 -(void) endLoadMore
 {
-    //[self.tableView footerEndRefreshing];
-    [self.tableView.footer endRefreshing];
+    [self.tableView.mj_footer endRefreshing];
     
 }
 
 
 -(void) loadOver
 {
-    [self.tableView.footer endRefreshingWithNoMoreData];
+    [self.tableView.mj_footer endRefreshingWithNoMoreData];
     
 }
 
