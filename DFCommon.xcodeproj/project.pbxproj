@@ -42,7 +42,6 @@
 		1181FCA81B9005F60005E3AA /* DFSectionIndexTabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181FC201B9005F60005E3AA /* DFSectionIndexTabelViewController.m */; };
 		1181FCA91B9005F60005E3AA /* DFBaseDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181FC231B9005F60005E3AA /* DFBaseDataService.m */; };
 		1181FCAA1B9005F60005E3AA /* DFBaseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181FC251B9005F60005E3AA /* DFBaseResponse.m */; };
-		1181FCAB1B9005F60005E3AA /* DFBaseUploadDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181FC271B9005F60005E3AA /* DFBaseUploadDataService.m */; };
 		1181FCCD1B9005F60005E3AA /* PullMoreFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181FC731B9005F60005E3AA /* PullMoreFooterView.m */; };
 		1181FCCE1B9005F60005E3AA /* PullToRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181FC751B9005F60005E3AA /* PullToRefreshView.m */; };
 		1181FCCF1B9005F60005E3AA /* DFReachabilityUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181FC781B9005F60005E3AA /* DFReachabilityUtil.m */; };
@@ -80,8 +79,8 @@
 		110FA27F1AF3FEF900771420 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		110FA2811AF3FEF900771420 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		110FA2821AF3FEF900771420 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		110FA2841AF3FEF900771420 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		110FA2851AF3FEF900771420 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		110FA2841AF3FEF900771420 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../ViewController.h; sourceTree = "<group>"; };
+		110FA2851AF3FEF900771420 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../ViewController.m; sourceTree = "<group>"; };
 		110FA28A1AF3FEF900771420 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		115193A31C7AB9AD0089013B /* DFTableViewMJRefreshPlainControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFTableViewMJRefreshPlainControl.h; sourceTree = "<group>"; };
 		115193A41C7AB9AD0089013B /* DFTableViewMJRefreshPlainControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFTableViewMJRefreshPlainControl.m; sourceTree = "<group>"; };
@@ -100,8 +99,8 @@
 		117898041B933CF700E422FF /* fail@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fail@3x.png"; sourceTree = "<group>"; };
 		117898071B93640400E422FF /* refresh@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "refresh@2x.png"; sourceTree = "<group>"; };
 		117898081B93640400E422FF /* refresh@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "refresh@3x.png"; sourceTree = "<group>"; };
-		1178980B1B93684E00E422FF /* DemoHttpService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoHttpService.h; sourceTree = "<group>"; };
-		1178980C1B93684E00E422FF /* DemoHttpService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoHttpService.m; sourceTree = "<group>"; };
+		1178980B1B93684E00E422FF /* DemoHttpService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DemoHttpService.h; path = DFCommon/DemoHttpService.h; sourceTree = SOURCE_ROOT; };
+		1178980C1B93684E00E422FF /* DemoHttpService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DemoHttpService.m; path = DFCommon/DemoHttpService.m; sourceTree = SOURCE_ROOT; };
 		1181FC011B9005F60005E3AA /* NSDictionary+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JSON.h"; sourceTree = "<group>"; };
 		1181FC021B9005F60005E3AA /* NSDictionary+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JSON.m"; sourceTree = "<group>"; };
 		1181FC031B9005F60005E3AA /* NSMutableDictionary+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+JSON.h"; sourceTree = "<group>"; };
@@ -132,8 +131,6 @@
 		1181FC231B9005F60005E3AA /* DFBaseDataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFBaseDataService.m; sourceTree = "<group>"; };
 		1181FC241B9005F60005E3AA /* DFBaseResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFBaseResponse.h; sourceTree = "<group>"; };
 		1181FC251B9005F60005E3AA /* DFBaseResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFBaseResponse.m; sourceTree = "<group>"; };
-		1181FC261B9005F60005E3AA /* DFBaseUploadDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFBaseUploadDataService.h; sourceTree = "<group>"; };
-		1181FC271B9005F60005E3AA /* DFBaseUploadDataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFBaseUploadDataService.m; sourceTree = "<group>"; };
 		1181FC281B9005F60005E3AA /* DFCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFCommon.h; sourceTree = "<group>"; };
 		1181FC721B9005F60005E3AA /* PullMoreFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullMoreFooterView.h; sourceTree = "<group>"; };
 		1181FC731B9005F60005E3AA /* PullMoreFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullMoreFooterView.m; sourceTree = "<group>"; };
@@ -241,13 +238,9 @@
 				1181FBFF1B9005F60005E3AA /* DFCommon */,
 				110FA2811AF3FEF900771420 /* AppDelegate.h */,
 				110FA2821AF3FEF900771420 /* AppDelegate.m */,
-				110FA2841AF3FEF900771420 /* ViewController.h */,
-				110FA2851AF3FEF900771420 /* ViewController.m */,
 				110FA28A1AF3FEF900771420 /* Images.xcassets */,
 				110FA27D1AF3FEF900771420 /* Supporting Files */,
 				1181FCDD1B9006780005E3AA /* prefix.pch */,
-				1178980B1B93684E00E422FF /* DemoHttpService.h */,
-				1178980C1B93684E00E422FF /* DemoHttpService.m */,
 			);
 			path = DFCommon;
 			sourceTree = "<group>";
@@ -264,6 +257,10 @@
 		115193A21C7AAEBF0089013B /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				110FA2841AF3FEF900771420 /* ViewController.h */,
+				110FA2851AF3FEF900771420 /* ViewController.m */,
+				1178980B1B93684E00E422FF /* DemoHttpService.h */,
+				1178980C1B93684E00E422FF /* DemoHttpService.m */,
 				115193A61C7ABB340089013B /* DFLogoRefreshControl.h */,
 				115193A71C7ABB340089013B /* DFLogoRefreshControl.m */,
 			);
@@ -390,8 +387,6 @@
 				1181FC231B9005F60005E3AA /* DFBaseDataService.m */,
 				1181FC241B9005F60005E3AA /* DFBaseResponse.h */,
 				1181FC251B9005F60005E3AA /* DFBaseResponse.m */,
-				1181FC261B9005F60005E3AA /* DFBaseUploadDataService.h */,
-				1181FC271B9005F60005E3AA /* DFBaseUploadDataService.m */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -718,7 +713,6 @@
 				1181FCDB1B9005F60005E3AA /* DFDatabaseHelper.m in Sources */,
 				1181FC9B1B9005F60005E3AA /* UIBarButtonItem+Lite.m in Sources */,
 				11E157BF1BC0C30800F2F99A /* UITabBar+Badge.m in Sources */,
-				1181FCAB1B9005F60005E3AA /* DFBaseUploadDataService.m in Sources */,
 				1181FCD41B9005F60005E3AA /* DFTableViewMJRefreshControl.m in Sources */,
 				1181FC9D1B9005F60005E3AA /* UILabel+Corner.m in Sources */,
 				1173E54D1C722059004C9979 /* DFVideoPlayController.m in Sources */,

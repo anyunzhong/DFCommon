@@ -206,25 +206,25 @@
 #pragma - mark DFDataServiceDelegate
 
 
--(void)onRequestError:(NSError *)error
+-(void)onRequestError:(NSError *)error dataService:(DFBaseDataService *)dataService
 {
-    [super onRequestError:error];
+    [super onRequestError:error dataService:dataService];
     
     //BOOL reload = self.refreshFooterControlType == DFTableViewRefreshControlTypeEGO?YES:NO;
     [self onEnd:NO];
 }
 
--(void)onStatusError:(DFBaseResponse *)response
+-(void)onStatusError:(DFBaseResponse *)response dataService:(DFBaseDataService *)dataService
 {
-    [super onStatusError:response];
+    [super onStatusError:response dataService:dataService];
     
     //BOOL reload = self.refreshFooterControlType == DFTableViewRefreshControlTypeEGO?YES:NO;
     [self onEnd:NO];
 }
 
-- (void)onStatusOk:(DFBaseResponse *)response classType:(Class)classType
+- (void)onStatusOk:(DFBaseResponse *)response dataService:(DFBaseDataService *)dataService
 {
-    [super onStatusOk:response classType:classType];
+    [super onStatusOk:response dataService:dataService];
     
     [self onEnd:YES];
     

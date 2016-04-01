@@ -14,8 +14,10 @@
 
 @interface DFBaseDataService()
 
+
 @property (nonatomic,strong) NSMutableDictionary *params;
 
+@property (nonatomic,strong) AFHTTPRequestOperationManager *manager;
 
 @end
 
@@ -33,6 +35,10 @@
         _manager.requestSerializer.timeoutInterval = NetworkTimeoutInterval;
         _requestType = DFRequestTypeGet;
         _params = [NSMutableDictionary dictionary];
+        
+        if ([self getRequestIp] && [self getRequestDomain]) {
+            [_manager.requestSerializer setValue:[self getRequestDomain] forHTTPHeaderField:@"Host"];
+        }
     }
     return self;
 }
@@ -62,46 +68,97 @@
 -(void)executeRequest
 {
     switch (_requestType) {
-            case DFRequestTypeGet:
+        case DFRequestTypeGet:
         {
             [_manager GET:[self getRequestUrl] parameters:_params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+                
                 [self onSuccess:responseObject];
+                
             } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                
                 [self onError:error];
+                
             }];
             break;
         }
             
-            case DFRequestTypePost:
+        case DFRequestTypePost:
         {
-            
+            [_manager POST:[self getRequestUrl] parameters:_params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+                
+                [self onSuccess:responseObject];
+                
+            } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                
+                [self onError:error];
+                
+            }];
             break;
         }
-            case DFRequestTypePostMultipart:
+        case DFRequestTypePostMultipart:
         {
+            NSData *data = [self getFileData];
+            if (data == nil) {
+                return;
+            }
+            
+            [self.manager POST:[self getRequestUrl] parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
+                
+                [formData appendPartWithFileData:data name:@"file" fileName:[NSString stringWithFormat:@"foo.%@",[self getFileType]] mimeType:[NSString stringWithFormat:@"image/%@",[self getFileType]]];
+                
+            } success:^(AFHTTPRequestOperation *operation, id responseObject) {
+            
+                [self onSuccess:responseObject];
+            
+            } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                
+                [self onError:error];
+                
+            }];
             
             break;
         }
         default:
             break;
     }
-
+    
 }
 
 -(NSString *) getRequestUrl
 {
-    NSString *url = [NSString stringWithFormat:@"%@%@",[self getRequestDomain],[self getRequestPath]];
+    NSString *address;
+    if ([self getRequestIp]) {
+        address = [self getRequestIp];
+    }else{
+        address = [self getRequestDomain];
+    }
+    NSString *url = [NSString stringWithFormat:@"http://%@%@",address,[self getRequestPath]];
     return  url;
 }
 
 -(NSString *) getRequestDomain
 {
-    return @"";
+    return nil;
 }
 
 -(NSString *) getRequestPath
 {
-    return @"";
+    return nil;
+}
+
+-(NSString *)getRequestIp
+{
+    return nil;
+}
+
+-(NSString *)getFileType
+{
+    return nil;
+}
+
+-(NSData *)getFileData
+{
+    return nil;
 }
 
 
@@ -118,19 +175,20 @@
         
         if (response.status == 1) {
             
-            [self parseResponse:response];
+            [self parseResponse:response.data];
             
-            if (_delegate && [_delegate conformsToProtocol:@protocol(DFDataServiceDelegate)] && [_delegate respondsToSelector:@selector(onStatusOk:classType:)]) {
-                [_delegate onStatusOk:response classType:[self class]];
+            if (_delegate && [_delegate conformsToProtocol:@protocol(DFDataServiceDelegate)] && [_delegate respondsToSelector:@selector(onStatusOk:dataService:)]) {
+                
+                [_delegate onStatusOk:response dataService:self];
             }
         }else{
-            if (_delegate && [_delegate conformsToProtocol:@protocol(DFDataServiceDelegate)] && [_delegate respondsToSelector:@selector(onStatusError:)]) {
+            if (_delegate && [_delegate conformsToProtocol:@protocol(DFDataServiceDelegate)] && [_delegate respondsToSelector:@selector(onStatusError:dataService:)]) {
                 
                 if (response.errorMsg == nil) {
                     response.errorMsg = @"出错啦!";
                 }
                 
-                [_delegate onStatusError:response];
+                [_delegate onStatusError:response dataService:self];
             }
         }
     }
@@ -139,8 +197,8 @@
 
 -(void) onError:(NSError *)error
 {
-    if (_delegate && [_delegate conformsToProtocol:@protocol(DFDataServiceDelegate)] && [_delegate respondsToSelector:@selector(onRequestError:)]) {
-        [_delegate onRequestError:error];
+    if (_delegate && [_delegate conformsToProtocol:@protocol(DFDataServiceDelegate)] && [_delegate respondsToSelector:@selector(onRequestError:dataService:)]) {
+        [_delegate onRequestError:error dataService:self];
     }
     
     

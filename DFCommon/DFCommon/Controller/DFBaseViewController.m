@@ -298,7 +298,7 @@
 #pragma - mark DFDataServiceDelegate
 
 
--(void)onRequestError:(NSError *)error
+-(void)onRequestError:(NSError *)error dataService:(DFBaseDataService *)dataService
 {
     if (error.code == CustomErrorConnectFailed || error.code == -1005) {
         [self hudShowText:@"网络无法连接"];
@@ -317,7 +317,7 @@
     NSLog(@"%@",error);
 }
 
--(void)onStatusError:(DFBaseResponse *)response
+-(void)onStatusError:(DFBaseResponse *)response dataService:(DFBaseDataService *)dataService
 {
     if (response.errorCode == 0 || response.errorMsg == nil) {
         [self hudShowText:@"未知错误, 请联系客服"];
@@ -334,7 +334,7 @@
     
 }
 
-- (void)onStatusOk:(DFBaseResponse *)response classType:(Class)classType
+- (void)onStatusOk:(DFBaseResponse *)response dataService:(DFBaseDataService *)dataService
 {
     if ([self enableAutoLoadStateView]) {
         [self hideLoadingView];
