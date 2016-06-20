@@ -2,8 +2,8 @@
 Pod::Spec.new do |s|
 
 
-  s.name         = "DFCommon-SA"
-  s.version      = "1.4.4"
+  s.name         = "DFCommon"
+  s.version      = "1.4.3"
   s.summary      = "快速开发ios app，封装了ios开发常用的功能(稍作修改)"
 
   s.homepage     = "https://github.com/chn-lyzhi/DFCommon"
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "7.0"
 
 
-  s.source       = { :git => "https://github.com/chn-lyzhi/DFCommon.git", :tag => "1.4.4" }
+  s.source       = { :git => "https://github.com/chn-lyzhi/DFCommon.git", :tag => "1.4.3" }
 
   s.source_files  = "DFCommon/DFCommon/**/*.{h,m}"
 
