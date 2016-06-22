@@ -17,7 +17,7 @@
 
 @property (nonatomic,strong) NSMutableDictionary *params;
 
-@property (nonatomic,strong) AFHTTPRequestOperationManager *manager;
+@property (nonatomic, strong) AFHTTPSessionManager * manager;
 
 @end
 
@@ -31,7 +31,7 @@
 {
     self = [super init];
     if (self) {
-        _manager = [[AFHTTPRequestOperationManager alloc] init];
+        _manager = [[AFHTTPSessionManager alloc] init];
         _manager.requestSerializer.timeoutInterval = NetworkTimeoutInterval;
         _requestType = DFRequestTypeGet;
         _params = [NSMutableDictionary dictionary];
@@ -70,28 +70,20 @@
     switch (_requestType) {
         case DFRequestTypeGet:
         {
-            [_manager GET:[self getRequestUrl] parameters:_params success:^(AFHTTPRequestOperation *operation, id responseObject) {
-                
+            [_manager GET:[self getRequestUrl] parameters:_params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
                 [self onSuccess:responseObject];
-                
-            } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-                
+            } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
                 [self onError:error];
-                
             }];
             break;
         }
             
         case DFRequestTypePost:
         {
-            [_manager POST:[self getRequestUrl] parameters:_params success:^(AFHTTPRequestOperation *operation, id responseObject) {
-                
+            [_manager POST:[self getRequestUrl] parameters:_params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
                 [self onSuccess:responseObject];
-                
-            } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-                
+            } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
                 [self onError:error];
-                
             }];
             break;
         }
@@ -101,21 +93,13 @@
             if (data == nil) {
                 return;
             }
-            
-            [self.manager POST:[self getRequestUrl] parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
-                
+            [_manager POST:[self getRequestUrl] parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
                 [formData appendPartWithFileData:data name:@"file" fileName:[NSString stringWithFormat:@"foo.%@",[self getFileType]] mimeType:[NSString stringWithFormat:@"image/%@",[self getFileType]]];
-                
-            } success:^(AFHTTPRequestOperation *operation, id responseObject) {
-            
+            } progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
                 [self onSuccess:responseObject];
-            
-            } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-                
+            } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
                 [self onError:error];
-                
             }];
-            
             break;
         }
         default:

@@ -15,6 +15,9 @@
 -(void) onClickOutsideLink:(long long) uniqueId;
 -(void) onLongPress;
 
+- (void) onClickOutsideLink:(long long) uniqueId mllinkLabel:(MLLinkLabel *)linkLabel;
+- (void) onLongPressLinkLabel:(MLLinkLabel *)linkLabel;
+
 @end
 
 @interface MLLinkClickLabel : MLLinkLabel
