@@ -35,6 +35,9 @@
         if (_clickDelegate && [_clickDelegate respondsToSelector:@selector(onClickOutsideLink:)]) {
             [_clickDelegate onClickOutsideLink:_uniqueId];
         }
+        if (_clickDelegate && [_clickDelegate respondsToSelector:@selector(onClickOutsideLink:mllinkLabel:)]) {
+            [_clickDelegate onClickOutsideLink:_uniqueId mllinkLabel:self];
+        }
     }
     
 }

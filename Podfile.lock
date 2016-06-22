@@ -14,17 +14,6 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - DFCommon (1.4.3):
-    - AFNetworking (~> 3.1.0)
-    - FMDB (~> 2.6.2)
-    - MBProgressHUD (~> 0.9.1)
-    - MJPhotoBrowser (~> 1.0.2)
-    - MJRefresh (~> 3.1.7)
-    - MLLabel (~> 1.9.1)
-    - MMPopupView (~> 1.7.2)
-    - ODRefreshControl (~> 1.2)
-    - SDWebImage (~> 3.8.1)
-    - TZImagePickerController (~> 1.4.5)
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
@@ -42,13 +31,12 @@ PODS:
   - SDWebImage (3.8.1):
     - SDWebImage/Core (= 3.8.1)
   - SDWebImage/Core (3.8.1)
-  - SVProgressHUD (1.1.3)
+  - SVProgressHUD (2.0.3)
   - TZImagePickerController (1.4.5)
   - YLGIFImage (0.11)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
-  - DFCommon (from `../DFCommon`)
   - FMDB (~> 2.6.2)
   - MBProgressHUD (~> 0.9.1)
   - MJPhotoBrowser (~> 1.0.2)
@@ -59,13 +47,8 @@ DEPENDENCIES:
   - SDWebImage (~> 3.8.1)
   - TZImagePickerController (~> 1.4.5)
 
-EXTERNAL SOURCES:
-  DFCommon:
-    :path: ../DFCommon
-
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  DFCommon: 25d3a1f581a3a252ba27d5a8472964cd91aabfb1
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
@@ -75,10 +58,10 @@ SPEC CHECKSUMS:
   MMPopupView: fe1dd010824029dfb632fdf1a531db5dd5386020
   ODRefreshControl: 907e6149d72dde488d5917ccfabee5bd8d711a20
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
-  SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
   TZImagePickerController: 046f172ad54add0ce358dfae932d9183b7fafd03
   YLGIFImage: c0ae132fe80e5282b2762a97d14e23ba71a748ae
 
-PODFILE CHECKSUM: ae219aabc10bf93e17fc7f31c06dc1c88f68a9f2
+PODFILE CHECKSUM: 32ad2c796cb6768f000ecb3528bdf3764dafd8b8
 
 COCOAPODS: 1.0.1

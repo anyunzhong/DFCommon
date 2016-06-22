@@ -1,7 +1,7 @@
 platform :ios, '7.0'
 
 target :DFCommon do
-pod 'DFCommon', :path => ‘../DFCommon’
+    #pod 'DFCommon', :path => '../DFCommon'
 pod 'AFNetworking', '~> 3.1.0'
 pod 'SDWebImage', '~> 3.8.1'
 pod 'FMDB', '~> 2.6.2'
