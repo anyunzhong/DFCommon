@@ -11,7 +11,7 @@
 
 @interface DFBaseListDataService()
 
-@property (nonatomic, strong) NSNumber *start;
+@property (nonatomic, strong) NSString *start;
 
 @end
 
@@ -23,6 +23,7 @@
     self = [super init];
     if (self) {
         _size = 20;
+        _start = @"0";
     }
     return self;
 }
@@ -31,14 +32,12 @@
 {
     [super setRequestParams:params];
     [params setObject:[NSNumber numberWithUnsignedInteger:_size] forKey:@"size"];
-    if (_start!=nil) {
-        [params setObject:_start forKey:@"start"];
-    }
+    [params setObject:_start forKey:@"start"];
     
 }
 -(void)refresh
 {
-    _start = 0;
+    _start = @"0";
     [self execute];
 }
 
