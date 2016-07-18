@@ -36,6 +36,8 @@
 
 -(void)parseResponse:(NSDictionary *)data
 {
+    [super parseResponse:data];
+    
     NSLog(@"response: %@", data);
 }
 

@@ -29,8 +29,8 @@
         self.bAddHeader = YES;
         self.bAddFooter = YES;
         
-        DFLogoRefreshControl *control = [[DFLogoRefreshControl alloc] init];
-        self.refreshControl = control;
+        //DFLogoRefreshControl *control = [[DFLogoRefreshControl alloc] init];
+        //self.refreshControl = control;
 //      self.refreshControlType = DFTableViewRefreshControlTypeMJPlain;
         
     }
@@ -105,17 +105,17 @@
 
 -(void)startRefresh{
     
-    [_service execute];
+    [_service refresh];
 }
 
 -(void)startLoadMore
 {
-    [_service execute];
+    [_service loadMore];
 }
 
 -(void)onClickLoadFailView
 {
-    [_service execute];
+    [_service refresh];
 }
 
 

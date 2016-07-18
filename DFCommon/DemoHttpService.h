@@ -6,8 +6,8 @@
 //  Copyright (c) 2015年 Datafans, Inc. All rights reserved.
 //
 
-#import "DFBaseDataService.h"
+#import "DFBaseListDataService.h"
 
-@interface DemoHttpService : DFBaseDataService
+@interface DemoHttpService : DFBaseListDataService
 
 @end
