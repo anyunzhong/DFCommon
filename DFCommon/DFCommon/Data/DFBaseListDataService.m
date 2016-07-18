@@ -59,5 +59,7 @@
             [controller loadOver];
         }
     }
+    
+    _start = [data objectForKey:@"start"];
 }
 @end
