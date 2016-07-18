@@ -40,14 +40,16 @@
 }
 -(void) endLoadMore
 {
-    [self.tableView.mj_footer endRefreshing];
-    
+    if (!self.bLoadOver) {
+        [self.tableView.mj_footer endRefreshing];
+    }
 }
 
 
 -(void) loadOver
 {
     [self.tableView.mj_footer endRefreshingWithNoMoreData];
+    self.bLoadOver = YES;
     
 }
 

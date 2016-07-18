@@ -8,6 +8,11 @@
 
 #import "DFBaseTableViewController.h"
 
+@interface DFBaseTableViewController()
+
+@end
+
+
 
 @implementation DFBaseTableViewController
 

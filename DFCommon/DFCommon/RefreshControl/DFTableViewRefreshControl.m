@@ -18,6 +18,7 @@
         
         self.delegate = delegate;
         self.tableView = tableView;
+        self.bLoadOver = NO;
     }
     return self;
 }
@@ -36,6 +37,7 @@
 -(void) startRefresh
 {
     [_delegate startRefresh];
+    self.bLoadOver = NO;
 }
 
 

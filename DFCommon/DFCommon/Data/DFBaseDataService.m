@@ -155,13 +155,12 @@
         
         if (response.status == 1) {
             
+            [self parseResponse:response.data];
             
             if (_delegate && [_delegate conformsToProtocol:@protocol(DFDataServiceDelegate)] && [_delegate respondsToSelector:@selector(onStatusOk:dataService:)]) {
                 
                 [_delegate onStatusOk:response dataService:self];
             }
-            
-            [self parseResponse:response.data];
             
         }else{
             if (_delegate && [_delegate conformsToProtocol:@protocol(DFDataServiceDelegate)] && [_delegate respondsToSelector:@selector(onStatusError:dataService:)]) {

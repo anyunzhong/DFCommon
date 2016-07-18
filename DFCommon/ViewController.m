@@ -28,6 +28,7 @@
         
         self.bAddHeader = YES;
         self.bAddFooter = YES;
+        self.bAutoRefresh = YES;
         
         //DFLogoRefreshControl *control = [[DFLogoRefreshControl alloc] init];
         //self.refreshControl = control;

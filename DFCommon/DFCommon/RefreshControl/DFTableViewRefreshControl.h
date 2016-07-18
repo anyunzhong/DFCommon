@@ -23,6 +23,7 @@
 
 @property (nonatomic,assign) id<DFTableViewRefreshControlDelegate> delegate;
 
+@property (nonatomic, assign) BOOL bLoadOver;
 
 -(void) addHeader;
 -(void) addFooter;
