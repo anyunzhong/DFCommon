@@ -31,14 +31,14 @@
 {
     [super setRequestParams:params];
     [params setObject:[NSNumber numberWithUnsignedInteger:_size] forKey:@"size"];
-    if (_start) {
+    if (_start!=nil) {
         [params setObject:_start forKey:@"start"];
     }
     
 }
 -(void)refresh
 {
-    _start = nil;
+    _start = 0;
     [self execute];
 }
 
