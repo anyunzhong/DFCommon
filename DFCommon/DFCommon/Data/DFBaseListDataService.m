@@ -23,7 +23,6 @@
     self = [super init];
     if (self) {
         _size = 20;
-        
     }
     return self;
 }
@@ -32,7 +31,9 @@
 {
     [super setRequestParams:params];
     [params setObject:[NSNumber numberWithUnsignedInteger:_size] forKey:@"size"];
-    [params setObject:_start forKey:@"start"];
+    if (_start) {
+        [params setObject:_start forKey:@"start"];
+    }
     
 }
 -(void)refresh
