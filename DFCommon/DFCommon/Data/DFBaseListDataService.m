@@ -38,7 +38,7 @@
 }
 -(void)refresh
 {
-    _start = 0;
+    _start = nil;
     [self execute];
 }
 
