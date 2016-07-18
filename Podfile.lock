@@ -1,29 +1,23 @@
 PODS:
-  - AFNetworking (2.6.3):
-    - AFNetworking/NSURLConnection (= 2.6.3)
-    - AFNetworking/NSURLSession (= 2.6.3)
-    - AFNetworking/Reachability (= 2.6.3)
-    - AFNetworking/Security (= 2.6.3)
-    - AFNetworking/Serialization (= 2.6.3)
-    - AFNetworking/UIKit (= 2.6.3)
-  - AFNetworking/NSURLConnection (2.6.3):
+  - AFNetworking (3.0.4):
+    - AFNetworking/NSURLSession (= 3.0.4)
+    - AFNetworking/Reachability (= 3.0.4)
+    - AFNetworking/Security (= 3.0.4)
+    - AFNetworking/Serialization (= 3.0.4)
+    - AFNetworking/UIKit (= 3.0.4)
+  - AFNetworking/NSURLSession (3.0.4):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.6.3):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/Reachability (2.6.3)
-  - AFNetworking/Security (2.6.3)
-  - AFNetworking/Serialization (2.6.3)
-  - AFNetworking/UIKit (2.6.3):
-    - AFNetworking/NSURLConnection
+  - AFNetworking/Reachability (3.0.4)
+  - AFNetworking/Security (3.0.4)
+  - AFNetworking/Serialization (3.0.4)
+  - AFNetworking/UIKit (3.0.4):
     - AFNetworking/NSURLSession
-  - FMDB (2.6):
-    - FMDB/standard (= 2.6)
-  - FMDB/standard (2.6)
-  - Masonry (0.6.4)
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - Masonry (1.0.0)
   - MBProgressHUD (0.9.2)
   - MJPhotoBrowser (1.0.2):
     - SDWebImage
@@ -31,18 +25,18 @@ PODS:
     - YLGIFImage
   - MJRefresh (3.1.0)
   - MLLabel (1.9.0)
-  - MMPopupView (1.6):
+  - MMPopupView (1.7.1):
     - Masonry
   - ODRefreshControl (1.2)
   - SDWebImage (3.7.5):
     - SDWebImage/Core (= 3.7.5)
   - SDWebImage/Core (3.7.5)
-  - SVProgressHUD (1.1.3)
-  - TZImagePickerController (1.0.8)
+  - SVProgressHUD (2.0.2)
+  - TZImagePickerController (1.1.3)
   - YLGIFImage (0.11)
 
 DEPENDENCIES:
-  - AFNetworking (~> 2.6.0)
+  - AFNetworking (~> 3.0.0)
   - FMDB (~> 2.5)
   - MBProgressHUD (~> 0.9.1)
   - MJPhotoBrowser (~> 1.0.2)
@@ -54,18 +48,18 @@ DEPENDENCIES:
   - TZImagePickerController
 
 SPEC CHECKSUMS:
-  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
-  FMDB: c1968bab3ab0aed38f66cb778ae1e7fa9a652b6e
-  Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+  AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  Masonry: b529bb169217897b6354d4b56b1fada6d475b13d
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   MJPhotoBrowser: f55e8490231f44a78ca6455105a1c798a142c95f
   MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
   MLLabel: 9d4575d4bcf686462eeaf29c1990988f748f85fd
-  MMPopupView: 49c06ca9600256baf263ee5e67d97334735db262
+  MMPopupView: 278ea121feee5d5f54ffe1192dd1b92373472ec0
   ODRefreshControl: 907e6149d72dde488d5917ccfabee5bd8d711a20
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
-  SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
-  TZImagePickerController: 5b983f1999cdd38a417be5d89e4e0d1a1aba9894
+  SVProgressHUD: e4020e23badbd7cc61bc4a80d3c1da57f166a978
+  TZImagePickerController: f1105f36559852405fc93e16803430c25d7f7ea5
   YLGIFImage: c0ae132fe80e5282b2762a97d14e23ba71a748ae
 
 COCOAPODS: 0.39.0

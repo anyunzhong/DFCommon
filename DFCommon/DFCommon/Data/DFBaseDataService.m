@@ -11,13 +11,16 @@
 
 #import "DFNetwork.h"
 
+#define PROGRESS_BLOCK ^(NSProgress * _Nonnull downloadProgress) {}
+#define SUCCESS_BLOCK ^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) { [self onSuccess:responseObject]; }
+#define FAILURE_BLOCK ^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) { [self onError:error];}
 
 @interface DFBaseDataService()
 
 
 @property (nonatomic,strong) NSMutableDictionary *params;
 
-@property (nonatomic,strong) AFHTTPRequestOperationManager *manager;
+@property (nonatomic,strong) AFHTTPSessionManager *manager;
 
 @end
 
@@ -31,7 +34,7 @@
 {
     self = [super init];
     if (self) {
-        _manager = [[AFHTTPRequestOperationManager alloc] init];
+        _manager = [[AFHTTPSessionManager alloc] init];
         _manager.requestSerializer.timeoutInterval = NetworkTimeoutInterval;
         _requestType = DFRequestTypeGet;
         _params = [NSMutableDictionary dictionary];
@@ -70,29 +73,15 @@
     switch (_requestType) {
         case DFRequestTypeGet:
         {
-            [_manager GET:[self getRequestUrl] parameters:_params success:^(AFHTTPRequestOperation *operation, id responseObject) {
-                
-                [self onSuccess:responseObject];
-                
-            } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-                
-                [self onError:error];
-                
-            }];
+            
+            [_manager GET:[self getRequestUrl] parameters:_params progress:PROGRESS_BLOCK success:SUCCESS_BLOCK failure:FAILURE_BLOCK];
             break;
         }
             
         case DFRequestTypePost:
         {
-            [_manager POST:[self getRequestUrl] parameters:_params success:^(AFHTTPRequestOperation *operation, id responseObject) {
-                
-                [self onSuccess:responseObject];
-                
-            } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-                
-                [self onError:error];
-                
-            }];
+            
+            [_manager POST:[self getRequestUrl] parameters:_params progress:PROGRESS_BLOCK success:SUCCESS_BLOCK failure:FAILURE_BLOCK];
             break;
         }
         case DFRequestTypePostMultipart:
@@ -102,19 +91,10 @@
                 return;
             }
             
-            [self.manager POST:[self getRequestUrl] parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
+            [_manager POST:[self getRequestUrl] parameters:_params constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
                 
                 [formData appendPartWithFileData:data name:@"file" fileName:[NSString stringWithFormat:@"foo.%@",[self getFileType]] mimeType:[NSString stringWithFormat:@"image/%@",[self getFileType]]];
-                
-            } success:^(AFHTTPRequestOperation *operation, id responseObject) {
-            
-                [self onSuccess:responseObject];
-            
-            } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-                
-                [self onError:error];
-                
-            }];
+            } progress:PROGRESS_BLOCK success:SUCCESS_BLOCK failure:FAILURE_BLOCK];
             
             break;
         }
