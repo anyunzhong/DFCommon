@@ -11,8 +11,8 @@
 
 @protocol DFTableViewRefreshControlDelegate <NSObject>
 
--(void) startRefresh;
--(void) startLoadMore;
+-(void) startRefresh:(UITableView *) tableView;
+-(void) startLoadMore:(UITableView *) tableView;
 
 @end
 

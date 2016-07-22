@@ -56,6 +56,9 @@
         if (self.delegate && [self.delegate isKindOfClass:[DFBaseTableViewController class]]) {
             DFBaseTableViewController *controller = (DFBaseTableViewController *)self.delegate;
             [controller loadOver];
+        }else if (self.delegate && [self.delegate isKindOfClass:[DFBaseTableView class]]) {
+            DFBaseTableView *tableView = (DFBaseTableView *)self.delegate;
+            [tableView loadOver];
         }
     }
     

@@ -12,7 +12,6 @@
 		110FA2861AF3FEF900771420 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 110FA2851AF3FEF900771420 /* ViewController.m */; };
 		110FA28B1AF3FEF900771420 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 110FA28A1AF3FEF900771420 /* Images.xcassets */; };
 		1113C3931D3CD79500880520 /* DFBaseListDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1113C3921D3CD79500880520 /* DFBaseListDataService.m */; };
-		115193A51C7AB9AD0089013B /* DFTableViewMJRefreshPlainControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 115193A41C7AB9AD0089013B /* DFTableViewMJRefreshPlainControl.m */; };
 		115193A81C7ABB340089013B /* DFLogoRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 115193A71C7ABB340089013B /* DFLogoRefreshControl.m */; };
 		115193AA1C7ADB2C0089013B /* check_success@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 115193A91C7ADB2C0089013B /* check_success@2x.png */; };
 		1173E5421C722036004C9979 /* press_btn_green@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1173E5401C722036004C9979 /* press_btn_green@2x.png */; };
@@ -49,15 +48,19 @@
 		1181FCD01B9005F60005E3AA /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181FC7A1B9005F60005E3AA /* Reachability.m */; };
 		1181FCD11B9005F60005E3AA /* DFSandboxHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181FC7D1B9005F60005E3AA /* DFSandboxHelper.m */; };
 		1181FCD21B9005F60005E3AA /* pinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181FC7F1B9005F60005E3AA /* pinyin.m */; };
-		1181FCD41B9005F60005E3AA /* DFTableViewMJRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181FC881B9005F60005E3AA /* DFTableViewMJRefreshControl.m */; };
-		1181FCD51B9005F60005E3AA /* DFTableViewNativeRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181FC8A1B9005F60005E3AA /* DFTableViewNativeRefreshControl.m */; };
-		1181FCD61B9005F60005E3AA /* DFTableViewODRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181FC8C1B9005F60005E3AA /* DFTableViewODRefreshControl.m */; };
-		1181FCD71B9005F60005E3AA /* DFTableViewRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181FC8E1B9005F60005E3AA /* DFTableViewRefreshControl.m */; };
 		1181FCD81B9005F60005E3AA /* back-arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1181FC901B9005F60005E3AA /* back-arrow@2x.png */; };
 		1181FCD91B9005F60005E3AA /* back-arrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1181FC911B9005F60005E3AA /* back-arrow@3x.png */; };
 		1181FCDA1B9005F60005E3AA /* DFBaseStorageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181FC941B9005F60005E3AA /* DFBaseStorageService.m */; };
 		1181FCDB1B9005F60005E3AA /* DFDatabaseHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181FC961B9005F60005E3AA /* DFDatabaseHelper.m */; };
 		1181FCDC1B9005F60005E3AA /* DFUserDefaultStorageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181FC981B9005F60005E3AA /* DFUserDefaultStorageService.m */; };
+		1186E9591D41CB82005CACE6 /* DFTableViewMJRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1186E94F1D41CB82005CACE6 /* DFTableViewMJRefreshControl.m */; };
+		1186E95A1D41CB82005CACE6 /* DFTableViewMJRefreshPlainControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1186E9511D41CB82005CACE6 /* DFTableViewMJRefreshPlainControl.m */; };
+		1186E95B1D41CB82005CACE6 /* DFTableViewNativeRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1186E9531D41CB82005CACE6 /* DFTableViewNativeRefreshControl.m */; };
+		1186E95C1D41CB82005CACE6 /* DFTableViewODRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1186E9551D41CB82005CACE6 /* DFTableViewODRefreshControl.m */; };
+		1186E95D1D41CB82005CACE6 /* DFTableViewRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1186E9571D41CB82005CACE6 /* DFTableViewRefreshControl.m */; };
+		1186E9601D41CBCE005CACE6 /* DFBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1186E95F1D41CBCE005CACE6 /* DFBaseTableView.m */; };
+		1186E9631D41E2EB005CACE6 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 1186E9621D41E2EB005CACE6 /* ViewController2.m */; };
+		1186E9881D41F753005CACE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1186E9871D41F753005CACE6 /* LaunchScreen.storyboard */; };
 		11D581221BDB203800704C9E /* success@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11D581201BDB203800704C9E /* success@2x.png */; };
 		11D581231BDB203800704C9E /* success@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11D581211BDB203800704C9E /* success@3x.png */; };
 		11D581281BDB20DE00704C9E /* lame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11D581251BDB20DE00704C9E /* lame.framework */; };
@@ -85,8 +88,6 @@
 		110FA28A1AF3FEF900771420 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1113C3911D3CD79500880520 /* DFBaseListDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFBaseListDataService.h; sourceTree = "<group>"; };
 		1113C3921D3CD79500880520 /* DFBaseListDataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFBaseListDataService.m; sourceTree = "<group>"; };
-		115193A31C7AB9AD0089013B /* DFTableViewMJRefreshPlainControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFTableViewMJRefreshPlainControl.h; sourceTree = "<group>"; };
-		115193A41C7AB9AD0089013B /* DFTableViewMJRefreshPlainControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFTableViewMJRefreshPlainControl.m; sourceTree = "<group>"; };
 		115193A61C7ABB340089013B /* DFLogoRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFLogoRefreshControl.h; sourceTree = "<group>"; };
 		115193A71C7ABB340089013B /* DFLogoRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFLogoRefreshControl.m; sourceTree = "<group>"; };
 		115193A91C7ADB2C0089013B /* check_success@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check_success@2x.png"; sourceTree = "<group>"; };
@@ -150,14 +151,6 @@
 		1181FC811B9005F60005E3AA /* DFDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFDevice.h; sourceTree = "<group>"; };
 		1181FC821B9005F60005E3AA /* DFNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFNetwork.h; sourceTree = "<group>"; };
 		1181FC831B9005F60005E3AA /* DFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFView.h; sourceTree = "<group>"; };
-		1181FC871B9005F60005E3AA /* DFTableViewMJRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFTableViewMJRefreshControl.h; sourceTree = "<group>"; };
-		1181FC881B9005F60005E3AA /* DFTableViewMJRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFTableViewMJRefreshControl.m; sourceTree = "<group>"; };
-		1181FC891B9005F60005E3AA /* DFTableViewNativeRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFTableViewNativeRefreshControl.h; sourceTree = "<group>"; };
-		1181FC8A1B9005F60005E3AA /* DFTableViewNativeRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFTableViewNativeRefreshControl.m; sourceTree = "<group>"; };
-		1181FC8B1B9005F60005E3AA /* DFTableViewODRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFTableViewODRefreshControl.h; sourceTree = "<group>"; };
-		1181FC8C1B9005F60005E3AA /* DFTableViewODRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFTableViewODRefreshControl.m; sourceTree = "<group>"; };
-		1181FC8D1B9005F60005E3AA /* DFTableViewRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFTableViewRefreshControl.h; sourceTree = "<group>"; };
-		1181FC8E1B9005F60005E3AA /* DFTableViewRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFTableViewRefreshControl.m; sourceTree = "<group>"; };
 		1181FC901B9005F60005E3AA /* back-arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-arrow@2x.png"; sourceTree = "<group>"; };
 		1181FC911B9005F60005E3AA /* back-arrow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-arrow@3x.png"; sourceTree = "<group>"; };
 		1181FC931B9005F60005E3AA /* DFBaseStorageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFBaseStorageService.h; sourceTree = "<group>"; };
@@ -167,6 +160,21 @@
 		1181FC971B9005F60005E3AA /* DFUserDefaultStorageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFUserDefaultStorageService.h; sourceTree = "<group>"; };
 		1181FC981B9005F60005E3AA /* DFUserDefaultStorageService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFUserDefaultStorageService.m; sourceTree = "<group>"; };
 		1181FCDD1B9006780005E3AA /* prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = prefix.pch; sourceTree = "<group>"; };
+		1186E94E1D41CB82005CACE6 /* DFTableViewMJRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFTableViewMJRefreshControl.h; sourceTree = "<group>"; };
+		1186E94F1D41CB82005CACE6 /* DFTableViewMJRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFTableViewMJRefreshControl.m; sourceTree = "<group>"; };
+		1186E9501D41CB82005CACE6 /* DFTableViewMJRefreshPlainControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFTableViewMJRefreshPlainControl.h; sourceTree = "<group>"; };
+		1186E9511D41CB82005CACE6 /* DFTableViewMJRefreshPlainControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFTableViewMJRefreshPlainControl.m; sourceTree = "<group>"; };
+		1186E9521D41CB82005CACE6 /* DFTableViewNativeRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFTableViewNativeRefreshControl.h; sourceTree = "<group>"; };
+		1186E9531D41CB82005CACE6 /* DFTableViewNativeRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFTableViewNativeRefreshControl.m; sourceTree = "<group>"; };
+		1186E9541D41CB82005CACE6 /* DFTableViewODRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFTableViewODRefreshControl.h; sourceTree = "<group>"; };
+		1186E9551D41CB82005CACE6 /* DFTableViewODRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFTableViewODRefreshControl.m; sourceTree = "<group>"; };
+		1186E9561D41CB82005CACE6 /* DFTableViewRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFTableViewRefreshControl.h; sourceTree = "<group>"; };
+		1186E9571D41CB82005CACE6 /* DFTableViewRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFTableViewRefreshControl.m; sourceTree = "<group>"; };
+		1186E95E1D41CBCE005CACE6 /* DFBaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFBaseTableView.h; sourceTree = "<group>"; };
+		1186E95F1D41CBCE005CACE6 /* DFBaseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFBaseTableView.m; sourceTree = "<group>"; };
+		1186E9611D41E2EB005CACE6 /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		1186E9621D41E2EB005CACE6 /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
+		1186E9871D41F753005CACE6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11D581201BDB203800704C9E /* success@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "success@2x.png"; sourceTree = "<group>"; };
 		11D581211BDB203800704C9E /* success@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "success@3x.png"; sourceTree = "<group>"; };
 		11D581251BDB20DE00704C9E /* lame.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = lame.framework; sourceTree = "<group>"; };
@@ -251,6 +259,7 @@
 		110FA27D1AF3FEF900771420 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1186E9871D41F753005CACE6 /* LaunchScreen.storyboard */,
 				110FA27E1AF3FEF900771420 /* Info.plist */,
 				110FA27F1AF3FEF900771420 /* main.m */,
 			);
@@ -266,6 +275,8 @@
 				1178980C1B93684E00E422FF /* DemoHttpService.m */,
 				115193A61C7ABB340089013B /* DFLogoRefreshControl.h */,
 				115193A71C7ABB340089013B /* DFLogoRefreshControl.m */,
+				1186E9611D41E2EB005CACE6 /* ViewController2.h */,
+				1186E9621D41E2EB005CACE6 /* ViewController2.m */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -287,12 +298,12 @@
 			isa = PBXGroup;
 			children = (
 				1181FC281B9005F60005E3AA /* DFCommon.h */,
+				1186E94C1D41CB82005CACE6 /* View */,
 				1181FC001B9005F60005E3AA /* Category */,
 				1181FC0E1B9005F60005E3AA /* Controller */,
 				1181FC211B9005F60005E3AA /* Data */,
 				1181FC291B9005F60005E3AA /* Lib */,
 				1181FC801B9005F60005E3AA /* Macros */,
-				1181FC841B9005F60005E3AA /* RefreshControl */,
 				1181FC8F1B9005F60005E3AA /* Resource */,
 				1181FC921B9005F60005E3AA /* Storage */,
 			);
@@ -462,23 +473,6 @@
 			path = Macros;
 			sourceTree = "<group>";
 		};
-		1181FC841B9005F60005E3AA /* RefreshControl */ = {
-			isa = PBXGroup;
-			children = (
-				1181FC871B9005F60005E3AA /* DFTableViewMJRefreshControl.h */,
-				1181FC881B9005F60005E3AA /* DFTableViewMJRefreshControl.m */,
-				1181FC891B9005F60005E3AA /* DFTableViewNativeRefreshControl.h */,
-				1181FC8A1B9005F60005E3AA /* DFTableViewNativeRefreshControl.m */,
-				1181FC8B1B9005F60005E3AA /* DFTableViewODRefreshControl.h */,
-				1181FC8C1B9005F60005E3AA /* DFTableViewODRefreshControl.m */,
-				1181FC8D1B9005F60005E3AA /* DFTableViewRefreshControl.h */,
-				1181FC8E1B9005F60005E3AA /* DFTableViewRefreshControl.m */,
-				115193A31C7AB9AD0089013B /* DFTableViewMJRefreshPlainControl.h */,
-				115193A41C7AB9AD0089013B /* DFTableViewMJRefreshPlainControl.m */,
-			);
-			path = RefreshControl;
-			sourceTree = "<group>";
-		};
 		1181FC8F1B9005F60005E3AA /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -508,6 +502,41 @@
 				1181FC981B9005F60005E3AA /* DFUserDefaultStorageService.m */,
 			);
 			path = Storage;
+			sourceTree = "<group>";
+		};
+		1186E94C1D41CB82005CACE6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1186E94D1D41CB82005CACE6 /* RefreshControl */,
+				1186E9581D41CB82005CACE6 /* TableView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1186E94D1D41CB82005CACE6 /* RefreshControl */ = {
+			isa = PBXGroup;
+			children = (
+				1186E94E1D41CB82005CACE6 /* DFTableViewMJRefreshControl.h */,
+				1186E94F1D41CB82005CACE6 /* DFTableViewMJRefreshControl.m */,
+				1186E9501D41CB82005CACE6 /* DFTableViewMJRefreshPlainControl.h */,
+				1186E9511D41CB82005CACE6 /* DFTableViewMJRefreshPlainControl.m */,
+				1186E9521D41CB82005CACE6 /* DFTableViewNativeRefreshControl.h */,
+				1186E9531D41CB82005CACE6 /* DFTableViewNativeRefreshControl.m */,
+				1186E9541D41CB82005CACE6 /* DFTableViewODRefreshControl.h */,
+				1186E9551D41CB82005CACE6 /* DFTableViewODRefreshControl.m */,
+				1186E9561D41CB82005CACE6 /* DFTableViewRefreshControl.h */,
+				1186E9571D41CB82005CACE6 /* DFTableViewRefreshControl.m */,
+			);
+			path = RefreshControl;
+			sourceTree = "<group>";
+		};
+		1186E9581D41CB82005CACE6 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				1186E95E1D41CBCE005CACE6 /* DFBaseTableView.h */,
+				1186E95F1D41CBCE005CACE6 /* DFBaseTableView.m */,
+			);
+			path = TableView;
 			sourceTree = "<group>";
 		};
 		11D581241BDB20DE00704C9E /* lame */ = {
@@ -622,6 +651,7 @@
 				1173E5421C722036004C9979 /* press_btn_green@2x.png in Resources */,
 				1173E5431C722036004C9979 /* press_btn_green@3x.png in Resources */,
 				115193AA1C7ADB2C0089013B /* check_success@2x.png in Resources */,
+				1186E9881D41F753005CACE6 /* LaunchScreen.storyboard in Resources */,
 				110FA28B1AF3FEF900771420 /* Images.xcassets in Resources */,
 				1181FCD81B9005F60005E3AA /* back-arrow@2x.png in Resources */,
 				1181FCA01B9005F60005E3AA /* phone_line_dark@2x.png in Resources */,
@@ -693,21 +723,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				11E157BE1BC0C30800F2F99A /* MLLabel+Size.m in Sources */,
-				1181FCD51B9005F60005E3AA /* DFTableViewNativeRefreshControl.m in Sources */,
-				1181FCD71B9005F60005E3AA /* DFTableViewRefreshControl.m in Sources */,
 				110FA2861AF3FEF900771420 /* ViewController.m in Sources */,
 				1181FCD11B9005F60005E3AA /* DFSandboxHelper.m in Sources */,
 				1173E54B1C722059004C9979 /* DFVideoCaptureController.m in Sources */,
 				1181FCAA1B9005F60005E3AA /* DFBaseResponse.m in Sources */,
 				11E157A61BC0B92700F2F99A /* DFImageHelper.m in Sources */,
 				1181FCD01B9005F60005E3AA /* Reachability.m in Sources */,
+				1186E9591D41CB82005CACE6 /* DFTableViewMJRefreshControl.m in Sources */,
+				1186E9601D41CBCE005CACE6 /* DFBaseTableView.m in Sources */,
 				1181FCCE1B9005F60005E3AA /* PullToRefreshView.m in Sources */,
 				1181FCDC1B9005F60005E3AA /* DFUserDefaultStorageService.m in Sources */,
 				115193A81C7ABB340089013B /* DFLogoRefreshControl.m in Sources */,
 				11E157CB1BC8BD8E00F2F99A /* MLLinkClickLabel.m in Sources */,
+				1186E95C1D41CB82005CACE6 /* DFTableViewODRefreshControl.m in Sources */,
 				11E157B91BC0C2D500F2F99A /* LXActionSheet.m in Sources */,
 				1181FCA71B9005F60005E3AA /* DFBaseViewController.m in Sources */,
 				1181FCA91B9005F60005E3AA /* DFBaseDataService.m in Sources */,
+				1186E9631D41E2EB005CACE6 /* ViewController2.m in Sources */,
 				1181FCCF1B9005F60005E3AA /* DFReachabilityUtil.m in Sources */,
 				1173E54C1C722059004C9979 /* DFVideoDecoder.m in Sources */,
 				1181FCA41B9005F60005E3AA /* DFCommonRegisterController.m in Sources */,
@@ -718,25 +750,25 @@
 				1181FCDB1B9005F60005E3AA /* DFDatabaseHelper.m in Sources */,
 				1181FC9B1B9005F60005E3AA /* UIBarButtonItem+Lite.m in Sources */,
 				11E157BF1BC0C30800F2F99A /* UITabBar+Badge.m in Sources */,
-				1181FCD41B9005F60005E3AA /* DFTableViewMJRefreshControl.m in Sources */,
 				1181FC9D1B9005F60005E3AA /* UILabel+Corner.m in Sources */,
 				1173E54D1C722059004C9979 /* DFVideoPlayController.m in Sources */,
 				11E157641BBFC7B700F2F99A /* DFToolUtil.m in Sources */,
 				1181FCA61B9005F60005E3AA /* DFBaseTableViewController.m in Sources */,
+				1186E95D1D41CB82005CACE6 /* DFTableViewRefreshControl.m in Sources */,
 				1181FCA81B9005F60005E3AA /* DFSectionIndexTabelViewController.m in Sources */,
 				1178980D1B93684E00E422FF /* DemoHttpService.m in Sources */,
 				1181FC9C1B9005F60005E3AA /* UIButton+Corner.m in Sources */,
 				11D581291BDB20DE00704C9E /* MP3Converter.m in Sources */,
+				1186E95A1D41CB82005CACE6 /* DFTableViewMJRefreshPlainControl.m in Sources */,
 				11F080421BD54CCC0084DAA3 /* DFTabIndicatorView.m in Sources */,
 				1181FCA51B9005F60005E3AA /* DFBaseTabBarController.m in Sources */,
-				115193A51C7AB9AD0089013B /* DFTableViewMJRefreshPlainControl.m in Sources */,
 				11E157B51BC0C2D500F2F99A /* JSBadgeView.m in Sources */,
 				1181FCDA1B9005F60005E3AA /* DFBaseStorageService.m in Sources */,
 				1181FCD21B9005F60005E3AA /* pinyin.m in Sources */,
 				1113C3931D3CD79500880520 /* DFBaseListDataService.m in Sources */,
+				1186E95B1D41CB82005CACE6 /* DFTableViewNativeRefreshControl.m in Sources */,
 				1181FCCD1B9005F60005E3AA /* PullMoreFooterView.m in Sources */,
 				110FA2801AF3FEF900771420 /* main.m in Sources */,
-				1181FCD61B9005F60005E3AA /* DFTableViewODRefreshControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

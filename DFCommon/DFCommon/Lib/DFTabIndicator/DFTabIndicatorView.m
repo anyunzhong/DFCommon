@@ -183,7 +183,7 @@
     [self setTitleOnSelectIndex:index];
     
     [self changeScrollContentFrame:_scrollView.frame.size.width * index];
-    
+
 }
 
 -(void)setScrollView:(UIScrollView *)scrollView
@@ -217,8 +217,7 @@
 
 -(void) changeScrollContentFrame:(CGFloat) x
 {
-    CGRect frame = _scrollView.frame;
-    [_scrollView scrollRectToVisible:CGRectMake(x, frame.origin.y, frame.size.width, frame.size.height) animated:YES];
+    [_scrollView setContentOffset:CGPointMake(x, 0) animated:YES];
 }
 
 @end

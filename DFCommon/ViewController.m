@@ -24,7 +24,7 @@
 {
     self = [super init];
     if (self) {
-        self.style = UITableViewStylePlain;
+        self.style = UITableViewStyleGrouped;
         
         self.bAddHeader = YES;
         self.bAddFooter = YES;
@@ -42,6 +42,8 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
 
+    [self showLoadingView];
+    
     _service = [[DemoHttpService alloc] init];
     _service.delegate = self;
     
@@ -123,7 +125,7 @@
 -(BOOL)enableAutoLoadStateView
 {
     //如果返回 YES 将自动出现加载错误页面
-    return NO;
+    return YES;
 }
 
 

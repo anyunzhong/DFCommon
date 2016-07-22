@@ -36,14 +36,14 @@
 
 -(void) startRefresh
 {
-    [_delegate startRefresh];
+    [_delegate startRefresh:self.tableView];
     self.bLoadOver = NO;
 }
 
 
 -(void) startLoadMore
 {
-    [_delegate startLoadMore];
+    [_delegate startLoadMore:self.tableView];
 }
 
 

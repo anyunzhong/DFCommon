@@ -10,6 +10,8 @@
 
 @interface DFBaseTableViewController()
 
+@property (nonatomic, strong) DFBaseTableView *baseTableView;
+
 @end
 
 
@@ -27,15 +29,10 @@
         self.bAddHeader = NO;
         self.bAddFooter = NO;
         
+        self.tableBackgroudColor = [UIColor whiteColor];
+        
         self.topOffset=0;
         self.bottomOffset=0;
-        
-        _refreshControlDic = [NSMutableDictionary dictionary];
-        
-        [_refreshControlDic setObject:[DFTableViewNativeRefreshControl class] forKey:[NSNumber numberWithInteger:DFTableViewRefreshControlTypeNative]];
-        [_refreshControlDic setObject:[DFTableViewMJRefreshControl class] forKey:[NSNumber numberWithInteger:DFTableViewRefreshControlTypeMJ]];
-        [_refreshControlDic setObject:[DFTableViewMJRefreshPlainControl class] forKey:[NSNumber numberWithInteger:DFTableViewRefreshControlTypeMJPlain]];
-        [_refreshControlDic setObject:[DFTableViewODRefreshControl class] forKey:[NSNumber numberWithInteger:DFTableViewRefreshControlTypeOD]];
     }
     return self;
 }
@@ -59,58 +56,18 @@
 
 -(void) initTableView
 {
-    _tableView = [[UITableView alloc] initWithFrame:self.view.frame style:_style];
-    if (_tableBackgroudColor) {
-        _tableView.backgroundColor = _tableBackgroudColor;
-    }
     
-    _tableView.contentInset = UIEdgeInsetsMake(_topOffset, 0.0, _bottomOffset, 0.0);
-    _tableView.scrollIndicatorInsets=UIEdgeInsetsMake(_topOffset, 0.0, _bottomOffset, 0.0);
+    _baseTableView = [[DFBaseTableView alloc] initWithFrame:self.view.bounds style:self.style refreshControlType:self.refreshControlType bAddHeader:self.bAddHeader bAddFooter:self.bAddFooter bAutoLoadMore:self.bAutoLoadMore tableBackgroudColor:self.tableBackgroudColor topOffset:self.topOffset bottomOffset:self.bottomOffset];
+    _tableView = _baseTableView.tableView;
     
+    _baseTableView.dataSource = self;
+    _baseTableView.delegate = self;
+    _baseTableView.refreshControlDelegate = self;
     
-    _tableView.dataSource = self;
-    _tableView.delegate = self;
-    [self.view addSubview:_tableView];
-    
-    //顶部刷新 底部加载更多
-    [self initRefreshControl];
-}
-
-
--(void) initRefreshControl
-{
-    if (_refreshControl == nil && ( _bAddFooter || _bAddHeader)) {
-        _refreshControl = [self getRefreshControl: self.refreshControlType];
-    }
-
-    if (self.refreshControlType == DFTableViewRefreshControlTypeOD) {
-        ((DFTableViewODRefreshControl *)_refreshControl).topOffset = self.topOffset+64;
-    }
-    _refreshControl.tableView = _tableView;
-    _refreshControl.delegate = self;
-    
-    
-    if (_bAddHeader) {
-        
-        [_refreshControl addHeader];
-        
-    }
-    
-    if (_bAddFooter) {
-        [_refreshControl addFooter];
-    }
+    [self.view addSubview:_baseTableView];
     
 }
 
-
--(DFTableViewRefreshControl *) getRefreshControl:(DFTableViewRefreshControlType) type
-{
-    Class clazz = [_refreshControlDic objectForKey:[NSNumber numberWithInteger:type]];
-    
-    DFTableViewRefreshControl  *control = (DFTableViewRefreshControl *)[[clazz alloc] init];
-    
-    return control;
-}
 
 
 -(void)viewWillAppear:(BOOL)animated
@@ -125,9 +82,6 @@
     
     if (_bAutoRefresh) {
         [self autoRefresh];
-    }
-    
-    if (_bAutoLoadMore) {
     }
 }
 
@@ -174,7 +128,7 @@
 
 -(void) autoRefresh
 {
-    [_refreshControl autoRefresh];
+    [_baseTableView autoRefresh];
     
 }
 
@@ -189,20 +143,30 @@
     
 }
 
--(void) endRefresh
+
+-(void)startRefresh:(UITableView *)tableView
 {
-    [_refreshControl endRefresh];
-}
--(void) endLoadMore
-{
-    [_refreshControl endLoadMore];
+    [self startRefresh];
 }
 
+-(void)startLoadMore:(UITableView *)tableView
+{
+    [self startLoadMore];
+}
+
+-(void) endRefresh
+{
+    [_baseTableView endRefresh];
+}
+
+-(void) endLoadMore
+{
+    [_baseTableView endLoadMore];
+}
 
 -(void) loadOver
 {
-    [_refreshControl loadOver];
-    
+    [_baseTableView loadOver];
 }
 
 
@@ -214,23 +178,18 @@
 -(void)onRequestError:(NSError *)error dataService:(DFBaseDataService *)dataService
 {
     [super onRequestError:error dataService:dataService];
-    
-    //BOOL reload = self.refreshFooterControlType == DFTableViewRefreshControlTypeEGO?YES:NO;
     [self onEnd:NO];
 }
 
 -(void)onStatusError:(DFBaseResponse *)response dataService:(DFBaseDataService *)dataService
 {
     [super onStatusError:response dataService:dataService];
-    
-    //BOOL reload = self.refreshFooterControlType == DFTableViewRefreshControlTypeEGO?YES:NO;
     [self onEnd:NO];
 }
 
 - (void)onStatusOk:(DFBaseResponse *)response dataService:(DFBaseDataService *)dataService
 {
     [super onStatusOk:response dataService:dataService];
-    
     [self onEnd:YES];
     
 }

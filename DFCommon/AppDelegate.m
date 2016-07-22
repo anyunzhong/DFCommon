@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import "ViewController2.h"
+
 @interface AppDelegate ()
 
 @end
@@ -19,8 +21,11 @@
     
     _controller = [[ViewController alloc] init];
     
+    ViewController2 *controller2 = [ViewController2 new];
     
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:_controller];
+    
+    
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:controller2];
     
     _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
