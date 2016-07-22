@@ -10,6 +10,8 @@
 
 #import "ViewController2.h"
 
+#import "PageController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -23,9 +25,11 @@
     
     ViewController2 *controller2 = [ViewController2 new];
     
+    PageController *pageController = [[PageController alloc] init];
     
     
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:controller2];
+    
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:_controller];
     
     _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     

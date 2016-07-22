@@ -61,6 +61,7 @@
 		1186E9601D41CBCE005CACE6 /* DFBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1186E95F1D41CBCE005CACE6 /* DFBaseTableView.m */; };
 		1186E9631D41E2EB005CACE6 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 1186E9621D41E2EB005CACE6 /* ViewController2.m */; };
 		1186E9881D41F753005CACE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1186E9871D41F753005CACE6 /* LaunchScreen.storyboard */; };
+		1186E9961D421978005CACE6 /* PageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1186E9951D421978005CACE6 /* PageController.m */; };
 		11D581221BDB203800704C9E /* success@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11D581201BDB203800704C9E /* success@2x.png */; };
 		11D581231BDB203800704C9E /* success@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11D581211BDB203800704C9E /* success@3x.png */; };
 		11D581281BDB20DE00704C9E /* lame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11D581251BDB20DE00704C9E /* lame.framework */; };
@@ -175,6 +176,8 @@
 		1186E9611D41E2EB005CACE6 /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
 		1186E9621D41E2EB005CACE6 /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
 		1186E9871D41F753005CACE6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1186E9941D421978005CACE6 /* PageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageController.h; sourceTree = "<group>"; };
+		1186E9951D421978005CACE6 /* PageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageController.m; sourceTree = "<group>"; };
 		11D581201BDB203800704C9E /* success@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "success@2x.png"; sourceTree = "<group>"; };
 		11D581211BDB203800704C9E /* success@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "success@3x.png"; sourceTree = "<group>"; };
 		11D581251BDB20DE00704C9E /* lame.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = lame.framework; sourceTree = "<group>"; };
@@ -277,6 +280,8 @@
 				115193A71C7ABB340089013B /* DFLogoRefreshControl.m */,
 				1186E9611D41E2EB005CACE6 /* ViewController2.h */,
 				1186E9621D41E2EB005CACE6 /* ViewController2.m */,
+				1186E9941D421978005CACE6 /* PageController.h */,
+				1186E9951D421978005CACE6 /* PageController.m */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -766,6 +771,7 @@
 				1181FCDA1B9005F60005E3AA /* DFBaseStorageService.m in Sources */,
 				1181FCD21B9005F60005E3AA /* pinyin.m in Sources */,
 				1113C3931D3CD79500880520 /* DFBaseListDataService.m in Sources */,
+				1186E9961D421978005CACE6 /* PageController.m in Sources */,
 				1186E95B1D41CB82005CACE6 /* DFTableViewNativeRefreshControl.m in Sources */,
 				1181FCCD1B9005F60005E3AA /* PullMoreFooterView.m in Sources */,
 				110FA2801AF3FEF900771420 /* main.m in Sources */,

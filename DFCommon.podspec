@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "DFCommon"
-  s.version      = "1.4.14"
+  s.version      = "1.4.15"
   s.summary      = "快速开发ios app，封装了ios开发常用的功能"
 
   s.homepage     = "https://github.com/anyunzhong/DFCommon"

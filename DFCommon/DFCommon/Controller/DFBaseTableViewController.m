@@ -29,7 +29,7 @@
         self.bAddHeader = NO;
         self.bAddFooter = NO;
         
-        self.tableBackgroudColor = [UIColor whiteColor];
+        self.tableBackgroudColor = nil;
         
         self.topOffset=0;
         self.bottomOffset=0;
