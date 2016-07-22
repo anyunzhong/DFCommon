@@ -53,6 +53,7 @@
         self.topOffset = 0;
         self.bottomOffset = 0;
         
+        
         [self initView];
     }
     return self;
