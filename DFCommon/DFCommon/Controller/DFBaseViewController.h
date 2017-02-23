@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MBProgressHUD.h"
+#import <MBProgressHUD/MBProgressHUD.h>
 
 #import "DFBaseDataService.h"
 #import "UIBarButtonItem+Lite.h"

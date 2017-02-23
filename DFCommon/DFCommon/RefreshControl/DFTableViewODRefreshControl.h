@@ -7,7 +7,7 @@
 //
 
 #import "DFTableViewRefreshControl.h"
-#import "ODRefreshControl.h"
+#import <ODRefreshControl/ODRefreshControl.h>
 
 @interface DFTableViewODRefreshControl : DFTableViewRefreshControl
 

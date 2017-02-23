@@ -7,7 +7,8 @@
 //
 
 #import "DFTableViewRefreshControl.h"
-#import "MJRefresh.h"
+
+#import <MJRefresh/MJRefresh.h>
 
 @interface DFLogoRefreshControl : DFTableViewRefreshControl
 
