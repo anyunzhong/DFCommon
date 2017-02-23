@@ -6,7 +6,8 @@
 //  Copyright (c) 2015年 Datafans, Inc. All rights reserved.
 //
 
-#import "MLLinkLabel.h"
+
+#import <MLLabel/MLLinkLabel.h>
 
 @protocol MLLinkClickLabelDelegate <NSObject>
 

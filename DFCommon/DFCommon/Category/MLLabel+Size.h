@@ -7,8 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MLLabel.h"
-#import "MLLinkLabel.h"
+
+#import <MLLabel/MLLabel.h>
+#import <MLLabel/MLLinkLabel.h>
+
 
 @interface MLLabel (Size)
 
